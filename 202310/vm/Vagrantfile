@@ -1,0 +1,35 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  #config.vm.box = "generic/rhel7"
+  config.vm.box = "ubuntu/focal64"
+
+  config.vm.synced_folder '.', '/home/vagrant/foo'
+  config.vm.hostname = "Examen202310"
+  config.vm.define :Examen202310 do |t|
+  end
+
+  config.vm.network "private_network", :name => '', ip: "192.168.56.230"
+
+  # Agrego un nuevo disco (Ver Readme.md)
+  config.vm.disk :disk, size: "5GB", name: "extra_storage"
+  config.vm.disk :disk, size: "8GB", name: "extra_storage2"
+
+  config.vm.provider "virtualbox" do |vb|
+      vb.memory = "2048"
+      vb.name = "Examen202310"
+      vb.cpus = 2
+      vb.linked_clone = true
+  end
+  config.vm.provision "shell", inline: <<-SHELL
+    # Habilitamos acceso con clave por ssh
+    sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+    sudo systemctl restart sshd
+    
+    git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git 
+    
+  SHELL
+
+end
