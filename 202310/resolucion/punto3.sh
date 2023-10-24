@@ -43,7 +43,10 @@ EOF
 
 echo
 sudo fdisk -l $DISCO
+echo "Presiona Enter para continuar..."
+read
 echo
+
 echo "Muestro estado actual de los lv y fs"
 sudo lvs
 df -h /var/lib/docker /datos/multimedia /datos/repogit
@@ -58,6 +61,14 @@ sudo lvextend -L +2G /dev/mapper/vg_datos-lv_multimedia
 sudo lvextend -L +2G /dev/mapper/vg_datos-lv_repo
 sudo lvextend -l +100%FREE /dev/mapper/vg_docker-lv_docker
 echo
+echo "Muestro los tamaños de los lv antes de expandir el fs para evitar problemas si meti mal los dedos"
+sudo vgs; sudo lvs
+
+echo
+echo "Presiona Enter para continuar..."
+read
+echo
+
 echo "Expando los fs"
 sudo resize2fs /dev/mapper/vg_datos-lv_multimedia
 sudo resize2fs /dev/mapper/vg_datos-lv_repo
