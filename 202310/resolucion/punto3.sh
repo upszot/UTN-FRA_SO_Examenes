@@ -102,4 +102,10 @@ sudo swapon /dev/mapper/vg_datos-lv_swap
 echo
 echo "Muestro estado como quedo la swap"
 free -h ; sudo swapon -s
+echo
+echo "si tiro un ls -l contra el fs del lv de swap puedo ver que el dm-x corresponde"
+ls -l /dev/mapper/vg_datos-lv_swap
+echo
+echo "Tambien puedo validar filtrando la informacion del lsblk -f "
+lsblk -f  |grep  -iE 'name|swap'
 
