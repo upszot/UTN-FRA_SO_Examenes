@@ -55,6 +55,11 @@ echo
 echo "Muestro como quedaron los pv, vg y lv"
 sudo pvs; sudo vgs; sudo lvs
 echo 
+echo "Formateo los lv"
+sudo mkfs.ext4 /dev/mapper/vg_docker-lv_docker
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_multimedia
+sudo mkfs.ext4 /dev/mapper/vg_datos-lv_repo
+echo 
 echo "Creo los puntos de montaje"
 sudo mkdir -p /var/lib/docker/ /datos/{multimedia,repogit}
 echo 
@@ -62,7 +67,12 @@ echo "Agrego los montajes persistentes en /etc/fstab con separados de campos tab
 echo -e "/dev/mapper/vg_datos-lv_multimedia\t/datos/multimedia\text4\tdefaults\t0 0" | sudo tee -a /etc/fstab
 echo -e "/dev/mapper/vg_datos-lv_repo\t/datos/repogit\text4\tdefaults\t0 0" | sudo tee -a /etc/fstab
 echo -e "/dev/mapper/vg_docker-lv_docker\t/var/lib/docker\text4\tdefaults\t0 0" | sudo tee -a /etc/fstab
+echo 
+echo "Restarteo daemon-reload y ejecuto mount -a para que salte si hay un error, y monte los lv"
 sudo systemctl daemon-reload
 sudo mount -a
+echo 
+echo "Muestro los fs montados"
+df -h
 
 
