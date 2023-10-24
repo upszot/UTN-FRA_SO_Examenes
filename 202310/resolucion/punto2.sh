@@ -48,12 +48,21 @@ echo "Creo los pv, vg y lv"
 sudo pvcreate ${DISCO}3 ${DISCO}4
 sudo vgcreate vg_docker ${DISCO}3
 sudo vgcreate vg_datos ${DISCO}4
-lvcreate -l +100%FREE vg_docker -n lv_docker
-lvcreate -L +1G vg_datos -n lv_multimedia
-lvcreate -l +100%FREE vg_datos -n lv_repo
+sudo lvcreate -l +100%FREE vg_docker -n lv_docker
+sudo lvcreate -L +1G vg_datos -n lv_multimedia
+sudo lvcreate -l +100%FREE vg_datos -n lv_repo
 echo
 echo "Muestro como quedaron los pv, vg y lv"
 sudo pvs; sudo vgs; sudo lvs
 echo 
+echo "Creo los puntos de montaje"
+sudo mkdir -p /var/lib/docker/ /datos/{multimedia,repogit}
+echo 
+echo "Agrego los montajes persistentes en /etc/fstab con separados de campos tab excepto el ultimo que son espacios"
+echo -e "/dev/mapper/vg_datos-lv_multimedia\t/datos/multimedia\text4\tdefaults\t0 0" | sudo tee -a /etc/fstab
+echo -e "/dev/mapper/vg_datos-lv_repo\t/datos/repogit\text4\tdefaults\t0 0" | sudo tee -a /etc/fstab
+echo -e "/dev/mapper/vg_docker-lv_docker\t/var/lib/docker\text4\tdefaults\t0 0" | sudo tee -a /etc/fstab
+sudo systemctl daemon-reload
+sudo mount -a
 
 
