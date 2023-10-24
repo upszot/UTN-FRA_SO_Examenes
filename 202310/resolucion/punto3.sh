@@ -7,6 +7,8 @@ echo
 read -p "Ingrese se nombre del dispositivo de bloque de 8G (Ejemplo /dev/sdd): " DISCO 
 
 echo "ingreso $DISCO"
+echo
+sudo fdisk -l $DISCO
 echo "Presiona Enter para continuar..."
 read
 
@@ -33,6 +35,8 @@ echo "Particionamiento del resto del disco tipo LVM(8e) "
 sudo fdisk $DISCO << EOF
 n
 p
+
+
 
 
 t
