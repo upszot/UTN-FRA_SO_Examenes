@@ -81,10 +81,17 @@ echo
 echo "Valido que los lv y los fs esten de los tamaños correctos"
 sudo lvs
 df -h /var/lib/docker /datos/multimedia /datos/repogit
-echo
-echo "Creo el lv_swap para despues formatearlo como swap y habilitarla"
 
-sudo lvcreate -L +1G vg_datos -n lv_swap
+echo
+echo "Presiona Enter para continuar..."
+read
+echo
+
+echo "Creo el lv_swap para despues formatearlo como swap y habilitarla"
+sudo vgs
+echo "Como no me queda exactamente 1024M voy a usar +100%FREE para crear el lv"
+echo
+sudo lvcreate -l +100%FREE vg_datos -n lv_swap
 sudo mkswap /dev/mapper/vg_datos-lv_swap
 echo 
 echo "Muestro estado actual de memoria swap"
