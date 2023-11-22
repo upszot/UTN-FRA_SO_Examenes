@@ -1,0 +1,7 @@
+---
+
+#Muestro todas las variables
+- debug:
+    msg: 
+      - "{{ ansible_facts }}"
+      # - "{{ ansible_default_ipv4.address }} "
