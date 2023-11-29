@@ -5,7 +5,7 @@
      dejando solamente una task para la realizacion del examen
 
 
-## Ejecucion (Parado en la carpeta "playbook_pruebas"):
+## Ejecucion (Parado en la carpeta "202311_Recu/ansible/"):
 ```sh
 reset; ansible-playbook -i inventory/hosts playbook.yml
 ```
@@ -16,6 +16,12 @@ reset; ansible-playbook -i inventory/hosts playbook.yml
 		- hosts -> inventario propiamente dicho en formato INI
 		- host_vars  -> variables espesificas a un host
 		- group_vars -> variables espesificas para grupos de host
+	- roles
+		- multi_Pruebas
+			- tasks
+				- prueba_202311_Recu2doParcial.yml  -> Archivo a editar con las tareas del parcial
+			- templates
+				- template_01.j2  -> Template de jinja2 a editar
 	
 
 ### Comportamiento:
