@@ -1,0 +1,10 @@
+#--------------------#
+#
+# Listado de Usuarios separando campos por coma.
+#
+# Nombre_Usuario , Grupo_Primario , Directorio_Home
+#
+#--------------------#
+R2P_202311_Prog1,R2P_202311_GDesa,/Rwork/Desa/R2P_202311_Prog1
+R2P_202311_Prog2,R2P_202311_GDesa,/Rwork/Desa/R2P_202311_Prog2
+R2P_202311_Test1,R2P_202311_GTest,/Rwork/Test/R2P_202311_Test1
