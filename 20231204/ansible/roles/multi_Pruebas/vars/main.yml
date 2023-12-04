@@ -1,0 +1,10 @@
+#seteo de variables
+
+Variable_Vars_main: "valor Variable_Vars_main"
+
+lista:
+  - valor1
+  - valor2
+  - valor3
+
+  

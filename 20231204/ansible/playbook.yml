@@ -1,0 +1,17 @@
+---
+- hosts: all
+
+  vars_prompt:
+    - name: "NroPrueba"
+      prompt: "Ingrese Nro de Prueba:"
+      default: "20231204"
+      private: no
+
+  tasks:
+    - include_role:
+        name: multi_Pruebas
+    
+    - name: "Otra tarea"
+      debug:
+        msg: "Despues de la ejecucion del rol"
+
