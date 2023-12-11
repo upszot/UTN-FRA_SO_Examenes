@@ -1,0 +1,13 @@
+- hosts:
+    - all
+
+
+  vars_prompt:
+    - name: "NroPrueba"
+      prompt: "Ingrese Nro de Prueba:"
+      default: "202311_2doParcial"
+      private: no
+
+  roles: 
+    - role: multi_Pruebas
+ 
