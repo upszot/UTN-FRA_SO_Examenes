@@ -1,0 +1,88 @@
+Script iniciado en 2023-05-18 00:18:28-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="237" LINES="52"]
+]777;notify;Command completed;exit\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ grep disco -A1 vm/Vagrantfile 
+[?2004l]777;preexec\  # Agrego un nuevo [01;31m[Kdisco[m[K (Ver Readme.md)
+  config.vm.disk :disk, size: "9GB", name: "extra_storage"
+]777;notify;Command completed;grep disco -A1 vm/Vagrantfile \]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ grep ip vm/Vagrantfile 
+[?2004l]777;preexec\  config.vm.network "private_network", :name => 'vboxnet0', [01;31m[Kip[m[K: "192.168.56.2"
+]777;notify;Command completed;grep ip vm/Vagrantfile \]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ cd vm
+[?2004l]777;preexec\]777;notify;Command completed;cd vm\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial/vm\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial/vm\[?2004h[gferrer@pc-fusion vm]$ vagrant up
+[?2004l]777;preexec\[1;33m==> vagrant: You have enabled the experimental flag with all features enabled.
+==> vagrant: Please use with caution, as some of the features may not be fully
+==> vagrant: functional yet.[0m
+[0mBringing machine 'VMPruebas' up with 'virtualbox' provider...[0m
+[1m==> VMPruebas: Cloning VM...[0m
+[0m[K[0m[1m==> VMPruebas: Matching MAC address for NAT networking...[0m
+[1m==> VMPruebas: Checking if box 'ubuntu/focal64' version '20220905.0.0' is up to date...[0m
+[1m==> VMPruebas: Setting the name of the VM: VMPruebas[0m
+[1m==> VMPruebas: Clearing any previously set network interfaces...[0m
+[1m==> VMPruebas: Preparing network interfaces based on configuration...[0m
+[0m    VMPruebas: Adapter 1: nat[0m
+[0m    VMPruebas: Adapter 2: hostonly[0m
+[1m==> VMPruebas: Forwarding ports...[0m
+[0m    VMPruebas: 22 (guest) => 2222 (host) (adapter 1)[0m
+[1m==> VMPruebas: Configuring storage mediums...[0m
+[0m    VMPruebas: Disk 'extra_storage' not found in guest. Creating and attaching disk to guest...[0m
+[1m==> VMPruebas: Running 'pre-boot' VM customizations...[0m
+[1m==> VMPruebas: Booting VM...[0m
+[1m==> VMPruebas: Waiting for machine to boot. This may take a few minutes...[0m
+[0m    VMPruebas: SSH address: 127.0.0.1:2222[0m
+[0m    VMPruebas: SSH username: vagrant[0m
+[0m    VMPruebas: SSH auth method: private key[0m
+[0m    VMPruebas: 
+    VMPruebas: Vagrant insecure key detected. Vagrant will automatically replace
+    VMPruebas: this with a newly generated keypair for better security.[0m
+[0m    VMPruebas: 
+    VMPruebas: Inserting generated public key within guest...[0m
+[0m    VMPruebas: Removing insecure key from the guest if it's present...[0m
+[0m    VMPruebas: Key inserted! Disconnecting and reconnecting using new SSH key...[0m
+[1m==> VMPruebas: Machine booted and ready![0m
+[1m==> VMPruebas: Checking for guest additions in VM...[0m
+[1m==> VMPruebas: Setting hostname...[0m
+[1m==> VMPruebas: Configuring and enabling network interfaces...[0m
+[1m==> VMPruebas: Mounting shared folders...[0m
+[0m    VMPruebas: /home/vagrant/foo => /home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial/vm[0m
+[1m==> VMPruebas: Running provisioner: shell...[0m
+[0m    VMPruebas: Running: inline script[0m
+]777;notify;Command completed;vagrant up\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial/vm\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial/vm\[?2004h[gferrer@pc-fusion vm]$ ping [7m192.168.56.2[27m192.168.56.2
+[?2004l]777;preexec\PING 192.168.56.2 (192.168.56.2) 56(84) bytes of data.
+64 bytes from 192.168.56.2: icmp_seq=1 ttl=64 time=0.507 ms
+^C
+--- 192.168.56.2 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.507/0.507/0.507/0.000 ms
+]777;notify;Command completed;ping 192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial/vm\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial/vm\[?2004h[gferrer@pc-fusion vm]$ ssh vagrant@[7m192.168.56.2[27m192.168.56.2 
+[?2004l]777;preexec\The authenticity of host '192.168.56.2 (192.168.56.2)' can't be established.
+ED25519 key fingerprint is SHA256:IjdpzpVu/wmJSDHwk2Ml9HHu1h8uNH3Eu/zRwvEdNME.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.56.2' (ED25519) to the list of known hosts.
+vagrant@192.168.56.2's password: 
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.4.0-125-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu May 18 03:19:56 UTC 2023
+
+  System load:  0.92              Processes:               128
+  Usage of /:   3.5% of 38.70GB   Users logged in:         0
+  Memory usage: 11%               IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for enp0s8: 192.168.56.2
+
+
+0 updates can be applied immediately.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+New release '22.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ logout
+Connection to 192.168.56.2 closed.
+]777;notify;Command completed;ssh vagrant@192.168.56.2 \]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial/vm\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial/vm\[?2004h[gferrer@pc-fusion vm]$ exit
+[?2004l]777;preexec\exit
+
+Script terminado en 2023-05-18 00:20:04-03:00 [CÓDIGO_SALIDA_ORDEN="0"]

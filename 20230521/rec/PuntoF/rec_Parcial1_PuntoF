@@ -1,0 +1,484 @@
+Script iniciado en 2023-05-21 19:52:06-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="190" LINES="44"]
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ ssh vagrant@192.168.56.2
+[?2004l]777;preexec\vagrant@192.168.56.2's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-148-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun May 21 22:52:11 UTC 2023
+
+  System load:  0.19              Processes:               134
+  Usage of /:   5.1% of 38.70GB   Users logged in:         0
+  Memory usage: 12%               IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for enp0s8: 192.168.56.2
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '22.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sun May 21 22:51:34 2023 from 192.168.56.1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #rm -rf RTA_examen/PuntoFunto^C
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #PuntoF[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #PuntoF
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Memoria disponible... 2 formas..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #![K1.. 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ free -h 
+              total        used        free      shared  buff/cache   available
+Mem:          1.9Gi       159Mi       749Mi       0.0Ki       1.0Gi       1.6Gi
+Swap:            0B          0B          0B
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ free -h |awk '{print $7}' 
+
+1.6Gi
+
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ mkdir RTA_examen/PuntoF[K_F[K[Kf[KF
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ mkdir RTA_examen/PuntoF[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfree -h |awk '{print $7}'  > memoria.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #2da Opcion...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep a[K-i v[Kavaila /proc/meminfo 
+Mem[01;31m[KAvaila[m[Kble:    1703452 kB
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep -i availa /proc/meminfo >> RTA_examen/me[K[KPuntoF/M[Km[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K>> memoria.txt 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ mv memoria.txt /[KRTA_examen/PuntoF/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Montaje... 2 opciones tambien..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ f[Klsblk -f 
+NAME   FSTYPE   LABEL           UUID                                 FSAVAIL FSUSE% MOUNTPOINT
+loop0  squashfs                                                            0   100% /snap/lxd/24061
+loop1  squashfs                                                            0   100% /snap/snapd/19122
+loop2  squashfs                                                            0   100% /snap/core20/1879
+loop3  squashfs                                                            0   100% /snap/core20/1891
+sda                                                                                 
+└─sda1 ext4     cloudimg-rootfs 7bfe246c-b2d1-474e-aa69-c4acb8946060   36.7G     5% /
+sdb    iso9660  cidata          2023-05-15-21-59-56-00                              
+sdc                                                                                 
+├─sdc1 ext4                     d05bafb4-d9b3-4e99-a340-921e0e4e2e06    1.8G     0% /mnt/PuntoA/part01
+├─sdc2 ext4                     1da5db44-0ac0-4da7-ab90-74efc0725479    1.8G     0% /mnt/PuntoA/part02
+├─sdc3 ext4                     6ed38c6d-38fe-44b0-83b4-93828519cc8c    1.8G     0% /mnt/PuntoA/part03
+├─sdc4                                                                              
+├─sdc5 ext4                     b13899f0-3e75-43e5-8b26-1f0616db1361  906.2M     0% /mnt/PuntoA/part04
+├─sdc6 ext4                     98e2096b-904d-4f63-aa02-c23497e14f01  906.2M     0% /mnt/PuntoA/part05
+└─sdc7 ext4                     18c6bf95-8a44-4268-8843-f5b0ea1356b3  918.5M     0% /mnt/PuntoA/part06
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -f /s[Kdev/sdc[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -f /dev/sdc
+NAME   FSTYPE LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINT
+sdc                                                                     
+├─sdc1 ext4         d05bafb4-d9b3-4e99-a340-921e0e4e2e06    1.8G     0% /mnt/PuntoA/part01
+├─sdc2 ext4         1da5db44-0ac0-4da7-ab90-74efc0725479    1.8G     0% /mnt/PuntoA/part02
+├─sdc3 ext4         6ed38c6d-38fe-44b0-83b4-93828519cc8c    1.8G     0% /mnt/PuntoA/part03
+├─sdc4                                                                  
+├─sdc5 ext4         b13899f0-3e75-43e5-8b26-1f0616db1361  906.2M     0% /mnt/PuntoA/part04
+├─sdc6 ext4         98e2096b-904d-4f63-aa02-c23497e14f01  906.2M     0% /mnt/PuntoA/part05
+└─sdc7 ext4         18c6bf95-8a44-4268-8843-f5b0ea1356b3  918.5M     0% /mnt/PuntoA/part06
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -f /dev/sdc |awk '{ $1[K[K[Kprint $1 "/t/t" $2 "/t" $3}'
+NAME/t/tFSTYPE/tLABEL
+sdc/t/t/t
+├─sdc1/t/text4/td05bafb4-d9b3-4e99-a340-921e0e4e2e06
+├─sdc2/t/text4/t1da5db44-0ac0-4da7-ab90-74efc0725479
+├─sdc3/t/text4/t6ed38c6d-38fe-44b0-83b4-93828519cc8c
+├─sdc4/t/t/t
+├─sdc5/t/text4/tb13899f0-3e75-43e5-8b26-1f0616db1361
+├─sdc6/t/text4/t98e2096b-904d-4f63-aa02-c23497e14f01
+└─sdc7/t/text4/t18c6bf95-8a44-4268-8843-f5b0ea1356b3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -f /dev/sdc |awk '{print $1 "/t/t" $2 "/t" $3}'[1@?[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -f /dev/sdc? |awk '{print $1 "/t/t" $2 "/t" $3}'
+NAME/t/tFSTYPE/tLABEL
+sdc1/t/text4/td05bafb4-d9b3-4e99-a340-921e0e4e2e06
+sdc2/t/text4/t1da5db44-0ac0-4da7-ab90-74efc0725479
+sdc3/t/text4/t6ed38c6d-38fe-44b0-83b4-93828519cc8c
+sdc4/t/t/t
+sdc5/t/text4/tb13899f0-3e75-43e5-8b26-1f0616db1361
+sdc6/t/text4/t98e2096b-904d-4f63-aa02-c23497e14f01
+sdc7/t/text4/t18c6bf95-8a44-4268-8843-f5b0ea1356b3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -f /dev/sdc? |awk '{print $1 "/t/t" $2 "/t" $3}'[C[1@|[1@g[1@r[1@e[1@p[1@ [1@-[1@v[1@ [1@N[1@a[1P[1P[1P[1@I[1@ [1@N[1@A[1@M[1@E[1@ [1P[1P[1P[1@m[1@e
+NAME/t/tFSTYPE/tLABEL
+sdc1/t/text4/td05bafb4-d9b3-4e99-a340-921e0e4e2e06
+sdc2/t/text4/t1da5db44-0ac0-4da7-ab90-74efc0725479
+sdc3/t/text4/t6ed38c6d-38fe-44b0-83b4-93828519cc8c
+sdc4/t/t/t
+sdc5/t/text4/tb13899f0-3e75-43e5-8b26-1f0616db1361
+sdc6/t/text4/t98e2096b-904d-4f63-aa02-c23497e14f01
+sdc7/t/text4/t18c6bf95-8a44-4268-8843-f5b0ea1356b3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -f /dev/sdc? |grep -vI NAme|awk '{print $1 "/t/t" $2 "/t" $3}'[C[C[C[C[1P[1@i
+sdc1/t/text4/td05bafb4-d9b3-4e99-a340-921e0e4e2e06
+sdc2/t/text4/t1da5db44-0ac0-4da7-ab90-74efc0725479
+sdc3/t/text4/t6ed38c6d-38fe-44b0-83b4-93828519cc8c
+sdc4/t/t/t
+sdc5/t/text4/tb13899f0-3e75-43e5-8b26-1f0616db1361
+sdc6/t/text4/t98e2096b-904d-4f63-aa02-c23497e14f01
+sdc7/t/text4/t18c6bf95-8a44-4268-8843-f5b0ea1356b3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -f /dev/sdc? |grep -vi NAme|awk '{print $1 "/t/t" $2 "/t" $3}' > RTA_examen/PuntoF/montaje-[K.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Opcion 2 mas facil...L[K[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Opcion 2 mas facil...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk --help 
+
+Usage:
+ lsblk [options] [<device> ...]
+
+List information about block devices.
+
+Options:
+ -D, --discard        print discard capabilities
+ -E, --dedup <column> de-duplicate output by <column>
+ -I, --include <list> show only devices with specified major numbers
+ -J, --json           use JSON output format
+ -O, --output-all     output all columns
+ -P, --pairs          use key="value" output format
+ -S, --scsi           output info about SCSI devices
+ -T, --tree[=<column>] use tree format output
+ -a, --all            print all devices
+ -b, --bytes          print SIZE in bytes rather than in human readable format
+ -d, --nodeps         don't print slaves or holders
+ -e, --exclude <list> exclude devices by major number (default: RAM disks)
+ -f, --fs             output info about filesystems
+ -i, --ascii          use ascii characters only
+ -l, --list           use list format output
+ -M, --merge          group parents of sub-trees (usable for RAIDs, Multi-path)
+ -m, --perms          output info about permissions
+ -n, --noheadings     don't print headings
+ -o, --output <list>  output columns
+ -p, --paths          print complete device path
+ -r, --raw            use raw output format
+ -s, --inverse        inverse dependencies
+ -t, --topology       output info about topology
+ -z, --zoned          print zone model
+ -x, --sort <column>  sort output by <column>
+     --sysroot <dir>  use specified directory as system root
+
+ -h, --help           display this help
+ -V, --version        display version
+
+Available output columns:
+        NAME  device name
+       KNAME  internal kernel device name
+        PATH  path to the device node
+     MAJ:MIN  major:minor device number
+     FSAVAIL  filesystem size available
+      FSSIZE  filesystem size
+      FSTYPE  filesystem type
+      FSUSED  filesystem size used
+      FSUSE%  filesystem use percentage
+  MOUNTPOINT  where the device is mounted
+       LABEL  filesystem LABEL
+        UUID  filesystem UUID
+      PTUUID  partition table identifier (usually UUID)
+      PTTYPE  partition table type
+    PARTTYPE  partition type UUID
+   PARTLABEL  partition LABEL
+    PARTUUID  partition UUID
+   PARTFLAGS  partition flags
+          RA  read-ahead of the device
+          RO  read-only device
+          RM  removable device
+     HOTPLUG  removable or hotplug device (usb, pcmcia, ...)
+       MODEL  device identifier
+      SERIAL  disk serial number
+        SIZE  size of the device
+       STATE  state of the device
+       OWNER  user name
+       GROUP  group name
+        MODE  device node permissions
+   ALIGNMENT  alignment offset
+      MIN-IO  minimum I/O size
+      OPT-IO  optimal I/O size
+     PHY-SEC  physical sector size
+     LOG-SEC  logical sector size
+        ROTA  rotational device
+       SCHED  I/O scheduler name
+     RQ-SIZE  request queue size
+        TYPE  device type
+    DISC-ALN  discard alignment offset
+   DISC-GRAN  discard granularity
+    DISC-MAX  discard max bytes
+   DISC-ZERO  discard zeroes data
+       WSAME  write same max bytes
+         WWN  unique storage identifier
+        RAND  adds randomness
+      PKNAME  internal parent kernel device name
+        HCTL  Host:Channel:Target:Lun for SCSI
+        TRAN  device transport type
+  SUBSYSTEMS  de-duplicated chain of subsystems
+         REV  device revision
+      VENDOR  device vendor
+       ZONED  zone model
+
+For more details see lsblk(8).
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk --help |grpe -[K[K[K[K[Krep "-o"
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsb
+lsb_release  lsblk        
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -o[K[K-f 
+NAME   FSTYPE   LABEL           UUID                                 FSAVAIL FSUSE% MOUNTPOINT
+loop0  squashfs                                                            0   100% /snap/lxd/24061
+loop1  squashfs                                                            0   100% /snap/snapd/19122
+loop2  squashfs                                                            0   100% /snap/core20/1879
+loop3  squashfs                                                            0   100% /snap/core20/1891
+sda                                                                                 
+└─sda1 ext4     cloudimg-rootfs 7bfe246c-b2d1-474e-aa69-c4acb8946060   36.7G     5% /
+sdb    iso9660  cidata          2023-05-15-21-59-56-00                              
+sdc                                                                                 
+├─sdc1 ext4                     d05bafb4-d9b3-4e99-a340-921e0e4e2e06    1.8G     0% /mnt/PuntoA/part01
+├─sdc2 ext4                     1da5db44-0ac0-4da7-ab90-74efc0725479    1.8G     0% /mnt/PuntoA/part02
+├─sdc3 ext4                     6ed38c6d-38fe-44b0-83b4-93828519cc8c    1.8G     0% /mnt/PuntoA/part03
+├─sdc4                                                                              
+├─sdc5 ext4                     b13899f0-3e75-43e5-8b26-1f0616db1361  906.2M     0% /mnt/PuntoA/part04
+├─sdc6 ext4                     98e2096b-904d-4f63-aa02-c23497e14f01  906.2M     0% /mnt/PuntoA/part05
+└─sdc7 ext4                     18c6bf95-8a44-4268-8843-f5b0ea1356b3  918.5M     0% /mnt/PuntoA/part06
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -l [K[K[K[Kblk [1@m[1@a[1@n[1@ 
+[?1049h[22;0;0t[?1h=LSBLK(8)                                                                          System Administration                                                                          LSBLK(8)[m
+[m
+[1mNAME[0m[m
+       lsblk - list block devices[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mlsblk[0m [options] [[4mdevice[24m...][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mlsblk[0m lists information about all available or the specified block devices.  The [1mlsblk[0m command reads the [1msysfs[0m filesystem and [1mudev[0m [1mdb[0m to gather information. If the udev db is not[m
+       available or lsblk is compiled without udev support than it tries to read LABELs, UUIDs and filesystem types from the block device. In this case root permissions are necessary.[m
+[m
+       The command prints all block devices (except RAM disks) in a tree-like format by default.  Use [1mlsblk[0m [1m--help[0m to get a list of all available columns.[m
+[m
+       The default output, as well as the default output from options like [1m--fs[0m and [1m--topology[0m, is subject to change.  So whenever possible, you should avoid using  default  outputs  in[m
+       your scripts.  Always explicitly define expected columns by using [1m--output[0m [4mcolumns-list[24m and [1m--list[0m in environments where a stable output is required.[m
+[m
+       Note that [1mlsblk[0m might be executed in time when [1mudev[0m does not have all information about recently added or modified devices yet. In this case it is recommended to use [1mudevadm[0m [1mset‐[0m[m
+       [1mtle[0m before lsblk to synchronize with udev.[m
+[m
+[1mOPTIONS[0m[m
+       [1m-a[0m, [1m--all[0m[m
+              Also list empty devices and RAM disk devices.[m
+[m
+       [1m-b[0m, [1m--bytes[0m[m
+              Print the SIZE column in bytes rather than in a human-readable format.[m
+[m
+       [1m-D[0m, [1m--discard[0m[m
+              Print information about the discarding capabilities (TRIM, UNMAP) for each device.[m
+[m
+       [1m-d[0m, [1m--nodeps[0m[m
+              Do not print holder devices or slaves.  For example, [1mlsblk[0m [1m--nodeps[0m [1m/dev/sda[0m prints information about the sda device only.[m
+[m
+       [1m-E[0m, [1m--dedup[0m [4mcolumn[24m[m
+              Use [4mcolumn[24m as a de-duplication key to de-duplicate output tree. If the key is not available for the device, or the device is a partition  and  parental  whole-disk  device[m
+              provides the same key than the device is always printed.[m
+[m
+              The usual use case is to de-duplicate output on system multi-path devices, for example by [1m-E[0m [1mWWN[0m.[m
+[m
+       [1m-e[0m, [1m--exclude[0m [4mlist[24m[m
+              Exclude  the  devices specified by the comma-separated [4mlist[24m of major device numbers.  Note that RAM disks (major=1) are excluded by default if [1m--all[0m is not specified.  The[m
+              filter is applied to the top-level devices only. This may be confusing for [1m--list[0m output format where hierarchy of the devices is not obvious.[m
+[m
+[7m Manual page lsblk(8) line 1 (press h for help or q to quit)[27m[K[K/[K--[KOO[K[Koo[K[1;1HLSBLK(8)                                                                          System Administration                                                                          LSBLK(8)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       lsblk - list block devices[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mlsblk[0m [options] [[4mdevice[24m...][m
+[8;1H[m
+[9;1H[1mDESCRIPTION[0m[m
+[10;1H       [1mlsblk[0m lists information about all available or the specified block devices.  The [1mlsblk[0m command reads the [1msysfs[0m filesystem and [1mudev[0m [1mdb[0m to gather information. If the udev db is not[m
+[11;1H       available or lsblk is compiled without udev support than it tries to read LABELs, UUIDs and filesystem types from the block device. In this case root permissions are necessary.[m
+[12;1H[m
+[13;1H       The command prints all block devices (except RAM disks) in a tree-like format by default.  Use [1mlsblk[0m [1m--help[0m to get a list of all available columns.[m
+[14;1H[m
+[15;1H       The default output, as well as the default output from options like [1m--fs[0m and [1m--topology[0m, is subject to change.  So whenever possible, you should avoid using  default  outputs  in[m
+[16;1H       your scripts.  Always explicitly define expected columns by using [1m--output[0m [4mcolumns-list[24m and [1m--list[0m in environments where a stable output is required.[m
+[17;1H[m
+[18;1H       Note that [1mlsblk[0m might be executed in time when [1mudev[0m does not have all information about recently added or modified devices yet. In this case it is recommended to use [1mudevadm[0m [1mset‐[0m[m
+[19;1H       [1mtle[0m before lsblk to synchronize with udev.[m
+[20;1H[m
+[21;1H[1mOPTIONS[0m[m
+[22;1H       [1m-a[0m, [1m--all[0m[m
+[23;1H              Also list empty devices and RAM disk devices.[m
+[24;1H[m
+[25;1H       [1m-b[0m, [1m--bytes[0m[m
+[26;1H              Print the SIZE column in bytes rather than in a human-readable format.[m
+[27;1H[m
+[28;1H       [1m-D[0m, [1m--discard[0m[m
+[29;1H              Print information about the discarding capabilities (TRIM, UNMAP) for each device.[m
+[30;1H[m
+[31;1H       [1m-d[0m, [1m--nodeps[0m[m
+[32;1H              Do not print holder devices or slaves.  For example, [1mlsblk[0m [1m--nodeps[0m [1m/dev/sda[0m prints information about the sda device only.[m
+[33;1H[m
+[34;1H       [1m-E[0m, [1m--dedup[0m [4mcolumn[24m[m
+[35;1H              Use [4mcolumn[24m as a de-duplication key to de-duplicate output tree. If the key is not available for the device, or the device is a partition  and  parental  whole-disk  device[m
+[36;1H              provides the same key than the device is always printed.[m
+[37;1H[m
+[38;1H              The usual use case is to de-duplicate output on system multi-path devices, for example by [1m-E[0m [1mWWN[0m.[m
+[39;1H[m
+[40;1H       [1m-e[0m, [1m--exclude[0m [4mlist[24m[m
+[41;1H              Exclude  the  devices specified by the comma-separated [4mlist[24m of major device numbers.  Note that RAM disks (major=1) are excluded by default if [1m--all[0m is not specified.  The[m
+[42;1H              filter is applied to the top-level devices only. This may be confusing for [1m--list[0m output format where hierarchy of the devices is not obvious.[m
+[43;1H[m
+[44;1H[1;1HLSBLK(8)                                                                          System Administration                                                                          LSBLK(8)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       lsblk - list block devices[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mlsblk[0m [options] [[4mdevice[24m...][m
+[8;1H[m
+[9;1H[1mDESCRIPTION[0m[m
+[10;1H       [1mlsblk[0m lists information about all available or the specified block devices.  The [1mlsblk[0m command reads the [1msysfs[0m filesystem and [1mudev[0m [1mdb[0m to gather information. If the udev db is not[m
+[11;1H       available or lsblk is compiled without udev support than it tries to read LABELs, UUIDs and filesystem types from the block device. In this case root permissions are necessary.[m
+[12;1H[m
+[13;1H       The command prints all block devices (except RAM disks) in a tree-like format by default.  Use [1mlsblk[0m [1m--help[0m to get a list of all available columns.[m
+[14;1H[m
+[15;1H       The default output, as well as the default output from options like [1m--fs[0m and [1m--topology[0m, is subject to change.  So whenever possible, you should avoid using  default  outputs  in[m
+[16;1H       your scripts.  Always explicitly define expected columns by using [1m-[0m[1m[7m-o[27m[0m[1mutput[0m [4mcolumns-list[24m and [1m--list[0m in environments where a stable output is required.[m
+[17;1H[m
+[18;1H       Note that [1mlsblk[0m might be executed in time when [1mudev[0m does not have all information about recently added or modified devices yet. In this case it is recommended to use [1mudevadm[0m [1mset‐[0m[m
+[19;1H       [1mtle[0m before lsblk to synchronize with udev.[m
+[20;1H[m
+[21;1H[1mOPTIONS[0m[m
+[22;1H       [1m-a[0m, [1m--all[0m[m
+[23;1H              Also list empty devices and RAM disk devices.[m
+[24;1H[m
+[25;1H       [1m-b[0m, [1m--bytes[0m[m
+[26;1H              Print the SIZE column in bytes rather than in a human-readable format.[m
+[27;1H[m
+[28;1H       [1m-D[0m, [1m--discard[0m[m
+[29;1H              Print information about the discarding capabilities (TRIM, UNMAP) for each device.[m
+[30;1H[m
+[31;1H       [1m-d[0m, [1m--nodeps[0m[m
+[32;1H              Do not print holder devices or slaves.  For example, [1mlsblk[0m [1m--nodeps[0m [1m/dev/sda[0m prints information about the sda device only.[m
+[33;1H[m
+[34;1H       [1m-E[0m, [1m--dedup[0m [4mcolumn[24m[m
+[35;1H              Use [4mcolumn[24m as a de-duplication key to de-duplicate output tree. If the key is not available for the device, or the device is a partition  and  parental  whole-disk  device[m
+[36;1H              provides the same key than the device is always printed.[m
+[37;1H[m
+[38;1H              The usual use case is to de-duplicate output on system multi-path devices, for example by [1m-E[0m [1mWWN[0m.[m
+[39;1H[m
+[40;1H       [1m-e[0m, [1m--exclude[0m [4mlist[24m[m
+[41;1H              Exclude  the  devices specified by the comma-separated [4mlist[24m of major device numbers.  Note that RAM disks (major=1) are excluded by default if [1m--all[0m is not specified.  The[m
+[42;1H              filter is applied to the top-level devices only. This may be confusing for [1m--list[0m output format where hierarchy of the devices is not obvious.[m
+[43;1H[m
+[44;1H       [1m-f[0m, [1m--fs[0m[m
+              Output info about filesystems.  This option is equivalent to [1m[7m-o[27m[0m [1mNAME,FSTYPE,LABEL,UUID,MOUNTPOINT[0m.  The authoritative information about filesystems and raids  is  provided[m
+              by the [1mblkid[0m(8) command.[m
+[m
+       [1m-h[0m, [1m--help[0m[m
+              Display help text and exit.[m
+[m
+       [1m-I[0m, [1m--include[0m [4mlist[24m[m
+              Include  devices specified by the comma-separated [4mlist[24m of major device numbers.  The filter is applied to the top-level devices only. This may be confusing for [1m--list[0m out‐[m
+              put format where hierarchy of the devices is not obvious.[m
+[m
+       [1m-i[0m, [1m--ascii[0m[m
+              Use ASCII characters for tree formatting.[m
+[m
+       [1m-J[0m, [1m--json[0m[m
+[7m Manual page lsblk(8) line 16/158 43% (press h for help or q to quit)[27m[K[K/[K              Use JSON output format.  It's strongly recommended to use [1m-[0m[1m[7m-o[27m[0m[1mutput[0m and also [1m--tree[0m if necessary.[m
+[m
+       [1m-l[0m, [1m--list[0m[m
+              Produce output in the form of a list. The output does not provide information about relationships between devices and since version 2.34 every device is printed only once.[m
+[m
+       [1m-M[0m, [1m--merge[0m[m
+              Group parents of sub-trees to provide more readable output for RAIDs and Multi-path devices. The tree-like output is required.[m
+[m
+       [1m-m[0m, [1m--perms[0m[m
+              Output info about device owner, group and mode.  This option is equivalent to [1m[7m-o[27m[0m [1mNAME,SIZE,OWNER,GROUP,MODE[0m.[m
+[m
+       [1m-n[0m, [1m--noheadings[0m[m
+              Do not print a header line.[m
+[m
+       [1m[7m-o[27m[0m, [1m-[0m[1m[7m-o[27m[0m[1mutput[0m [4mlist[24m[m
+              Specify which output columns to print.  Use [1m--help[0m to get a list of all supported columns.  The columns may affect tree-like output.  The default is to use  tree  for  the[m
+              column 'NAME' (see also [1m--tree[0m).[m
+[m
+              The default list of columns may be extended if [4mlist[24m is specified in the format [4m+list[24m (e.g. [1mlsblk[0m [1m[7m-o[27m[0m [1m+UUID[0m).[m
+[m
+       [1m[7m-O[27m[0m, [1m-[0m[1m[7m-o[27m[0m[1mutput-all[0m[m
+              Output all available columns.[m
+[m
+       [1m-P[0m, [1m--pairs[0m[m
+              Produce output in the form of key="value" pairs.  All potentially unsafe characters are hex-escaped (\x<code>).[m
+[m
+       [1m-p[0m, [1m--paths[0m[m
+              Print full device paths.[m
+[m
+[7m Manual page lsblk(8) line 45/158 61% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ man lsblk [4P[C[C[C[C[C[C-o NAME,FSTYPE,UUID /dev/sdc
+NAME   FSTYPE UUID
+sdc           
+├─sdc1 ext4   d05bafb4-d9b3-4e99-a340-921e0e4e2e06
+├─sdc2 ext4   1da5db44-0ac0-4da7-ab90-74efc0725479
+├─sdc3 ext4   6ed38c6d-38fe-44b0-83b4-93828519cc8c
+├─sdc4        
+├─sdc5 ext4   b13899f0-3e75-43e5-8b26-1f0616db1361
+├─sdc6 ext4   98e2096b-904d-4f63-aa02-c23497e14f01
+└─sdc7 ext4   18c6bf95-8a44-4268-8843-f5b0ea1356b3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ lsblk -o NAME,FSTYPE,UUID /dev/sdc > RT[K[K[K[K>> R[K/dev/[K[K[K[K[K^C
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ll
+total 100
+drwxr-xr-x 8 vagrant vagrant  4096 May 21 22:57 [0m[01;34m.[0m/
+drwxr-xr-x 7 root    root     4096 May 18 06:01 [01;34m..[0m/
+-rw------- 1 vagrant vagrant 27237 May 21 22:51 .bash_history
+-rw-r--r-- 1 vagrant vagrant   220 May 15 21:58 .bash_logout
+-rw-r--r-- 1 vagrant vagrant  3771 May 15 21:58 .bashrc
+drwx------ 2 vagrant vagrant  4096 May 18 05:31 [01;34m.cache[0m/
+-rw------- 1 vagrant vagrant    32 May 21 22:57 .lesshst
+-rw-r--r-- 1 vagrant vagrant   807 May 15 21:58 .profile
+drwx------ 2 vagrant vagrant  4096 May 18 05:31 [01;34m.ssh[0m/
+-rw------- 1 vagrant vagrant  8848 May 20 19:21 .viminfo
+drwxrwxr-x 5 vagrant vagrant  4096 May 20 06:28 [01;34mEjercicio_D[0m/
+drwxrwxr-x 5 vagrant vagrant  4096 May 20 06:38 [01;34mEjercicio_E[0m/
+drwxrwxr-x 3 vagrant vagrant  4096 May 21 22:53 [01;34mRTA_examen[0m/
+drwxr-xr-x 1 vagrant vagrant  4096 May 18 05:32 [01;34mfoo[0m/
+-rw-rw-r-- 1 vagrant vagrant   194 May 20 19:21 mount_auto.sh
+-rw-rw-r-- 1 vagrant vagrant   374 May 18 07:15 particiones.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ llsblk -o NAME,FSTYPE,UUID /dev/sdc[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl[Ksblk -o NAME,FSTYPE,UUID /dev/sdc >> RTA_examen/PuntoF/montaje.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoF/montaje.txt[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoF/montaje.txt
+sdc1/t/text4/td05bafb4-d9b3-4e99-a340-921e0e4e2e06
+sdc2/t/text4/t1da5db44-0ac0-4da7-ab90-74efc0725479
+sdc3/t/text4/t6ed38c6d-38fe-44b0-83b4-93828519cc8c
+sdc4/t/t/t
+sdc5/t/text4/tb13899f0-3e75-43e5-8b26-1f0616db1361
+sdc6/t/text4/t98e2096b-904d-4f63-aa02-c23497e14f01
+sdc7/t/text4/t18c6bf95-8a44-4268-8843-f5b0ea1356b3
+NAME   FSTYPE UUID
+sdc           
+├─sdc1 ext4   d05bafb4-d9b3-4e99-a340-921e0e4e2e06
+├─sdc2 ext4   1da5db44-0ac0-4da7-ab90-74efc0725479
+├─sdc3 ext4   6ed38c6d-38fe-44b0-83b4-93828519cc8c
+├─sdc4        
+├─sdc5 ext4   b13899f0-3e75-43e5-8b26-1f0616db1361
+├─sdc6 ext4   98e2096b-904d-4f63-aa02-c23497e14f01
+└─sdc7 ext4   18c6bf95-8a44-4268-8843-f5b0ea1356b3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Procesadores... 2 opciones tambien...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep pro[K[K[K-i proce /proc/cpuinfo |tail -n1[K[K[K[K[K[K[K[K[K
+[01;31m[Kproce[m[Kssor	: 0
+[01;31m[Kproce[m[Kssor	: 1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep -i proce /proc/cpuinfo |tal[Kil  -n1 
+processor	: 1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep -i proce /proc/cpuinfo |tail  -n1  |awk '{print "[K$2}'
+:
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep -i proce /proc/cpuinfo |tail  -n1  |awk '{print $2}'[C[C[C[C[C[C[C[C[C[C[1P}'3}'
+1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep -i proce /proc/cpuinfo |tail  -n1  |awk '{print $3}'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K#tambien podria ser..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #tambien podria ser..grep -i proce /proc/cpuinfo |tail  -n1  |awk '{print $3}'[1P}'2}'[1@-[1@F[C[1@ [1@'[1@:[1@'[C[1@ 
+tail: cannot open ':' for reading: No such file or directory
+^C
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep -i proce /proc/cpuinfo |tail  -n1 -F ':'  |awk '{print $2}'[1P[1P[1P[1P[1P[1P[C[1P[C[C[C[C[C[C[1@-[1@F[1@ [C[1@'[1@:[C[1@'[1@ 
+ 1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep -i proce /proc/cpuinfo |tail  -n1  |awk -F ':' '{print $2}'[C[C+}'1}' }'
+2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep -i proce /proc/cpuinfo |tail  -n1  |awk -F ':' '{print $2+1 }' > RTA_examen/PuntoF/procesadores.txt 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ o[K#otra forma... mas rapido...[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #otra forma... mas rapido...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ nproc 
+2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ nproc  >> RTA_examen/Puntof[KF/procesadores.txt 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #fin
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ logout
+Connection to 192.168.56.2 closed.
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ [?2004l
+exit
+
+Script terminado en 2023-05-21 20:01:24-03:00 [CÓDIGO_SALIDA_ORDEN="0"]

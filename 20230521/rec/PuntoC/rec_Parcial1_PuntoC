@@ -1,0 +1,228 @@
+Script iniciado en 2023-05-20 02:57:40-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="190" LINES="44"]
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ ssh vagrant@192.168.56.2
+[?2004l]777;preexec\vagrant@192.168.56.2's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-148-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat May 20 05:57:45 UTC 2023
+
+  System load:  0.01              Processes:               124
+  Usage of /:   4.7% of 38.70GB   Users logged in:         0
+  Memory usage: 12%               IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for enp0s8: 192.168.56.2
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '22.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sat May 20 05:55:36 2023 from 192.168.56.1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls .l[K[K-l /PuntoB/ 
+total 12
+drwxrwx--- 2 parc1_user1 parc1_grupo1 4096 May 20 05:55 Grupo1
+drwxrw-r-x 2 parc1_user2 parc1_grupo2 4096 May 20 05:55 Grupo2
+drwxr-xr-- 2 parc1_user3 parc1_user3  4096 May 20 05:55 otro
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -l /PuntoB/ -d 
+drwxr-xr-x 5 root root 4096 May 20 05:55 /PuntoB/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Punto C
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Con usuario “parc1_user3” crear el archivo “otro/validar.txt” con la salida del comando whoami
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #version disney...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su 
+]0;root@VMPruebas: /home/vagrantroot@VMPruebas:/home/vagrant# su parc1_user3
+]0;parc1_user3@VMPruebas: /home/vagrant[01;32mparc1_user3@VMPruebas[00m:[01;34m/home/vagrant[00m$ whoami > /PuntoB/otro/validar.txt
+]0;parc1_user3@VMPruebas: /home/vagrant[01;32mparc1_user3@VMPruebas[00m:[01;34m/home/vagrant[00m$ cat /PuntoB/otro/validar.txt
+parc1_user3
+]0;parc1_user3@VMPruebas: /home/vagrant[01;32mparc1_user3@VMPruebas[00m:[01;34m/home/vagrant[00m$ ls -l /PuntoB/otro/validar.txt
+-rw-rw-r-- 1 parc1_user3 parc1_user3 12 May 20 05:58 /PuntoB/otro/validar.txt
+]0;parc1_user3@VMPruebas: /home/vagrant[01;32mparc1_user3@VMPruebas[00m:[01;34m/home/vagrant[00m$ exit
+]0;root@VMPruebas: /home/vagrantroot@VMPruebas:/home/vagrant# exit
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #despiues [K[K[K[K[Kues mas adelante.. vamos a ver una forma mas rapida de hacer lo mismo...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ # Crear el grupo parc1_grupo_todos y agregar los 3 usuarios en el.
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo groupadd -U parc1_user1,parc1_user2,parc1_user3 parc1_grupo_todos[1@#[1@E[C[1@s[1@t[1@o[1@ [C[1@s[1@i[1@ [1@l[1@a[1@ [1@v[1@e[1@r[C[1@s[1@i[1@o[1@n[1@ [1@d[1@e[1@l[1@ [1@g[1@r[1@o[1@u[1@p[1@a[1@d[1@d[1@ [1@e[C[1@s[1@ [1@m[1@a[C[1@s[1@ [1@n[1@u[1@e[1@v[1@a[1@.[1@.[1@.[1@ [1@-[1@>[1@ [1@ [1@ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ man groupadd |grep shadow-utils
+[01;31m[Kshadow-utils[m[K 4.8.1                                                                      11/29/2022                                                                            GROUPADD(8)
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #aca como tenemos la 4.9[K8.. no tenemos la o[Kopcion -U... asique hay que hacerlo de la forma lenta.... ya con la version 4.11 esta esa opcin[Kon..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ groupadd --help
+Usage: groupadd [options] GROUP
+
+Options:
+  -f, --force                   exit successfully if the group already exists,
+                                and cancel -g if the GID is already used
+  -g, --gid GID                 use GID for the new group
+  -h, --help                    display this help message and exit
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -o, --non-unique              allow to create groups with duplicate
+                                (non-unique) GID
+  -p, --password PASSWORD       use this encrypted password for the new group
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       directory prefix
+      --extrausers              Use the extra users database
+
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ groupadd --help[Kparc1_grupo_todos[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@s[1@u[1@d[1@o[1@ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep todos /etc/grop[Ki[Kup[1@s[1@u[1@d[1@o[1@ 
+parc1_grupo_todos:x:1007:
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #a[Kgrupo creado... ar[Khora a cargarle los usuarios...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #La opcion lenta es .. [K[K[Kir uno por uno asi... ->  sudo usermod -a -G parc1_grupo_todos parc1_user1   
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Pero como sabemos hacer un loop.. {11[K..3} .. vemos [K[K[Ka[K[Kamos como hacerlo con un for...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ for NRO in {1..3}; do sudo usermod -a -G parc1_grupo_todos parc1_user1[K$NRO ; done[1@e[1@c[1@h[1@o[1@ 
+sudo usermod -a -G parc1_grupo_todos parc1_user1
+sudo usermod -a -G parc1_grupo_todos parc1_user2
+sudo usermod -a -G parc1_grupo_todos parc1_user3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Una ves que vi con un echo .. que el comando que quiero sale bien.. se lo quito y lo corro en serio...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Una ves que vi con un echo .. que el comando que quiero sale bien.. se lo quito y lo corro en serio...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pfor NRO in {1..3}; do echo sudo usermod -a -G parc1_grupo_todos parc1_user$NRO ; done[4P
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo grep todos /etc/group
+parc1_grupo_todos:x:1007:parc1_user1,parc1_user2,parc1_user3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Listo lo de los usuarios... tambien lo pude[K[Kedo ver...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ id parc1_user1
+uid=1002(parc1_user1) gid=1004(parc1_user1) groups=1004(parc1_user1),1002(parc1_grupo1),1007(parc1_grupo_todos)
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #asi..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Modificar el grupo propietario de la carpeta otros y todo su contenido para que sea del grupo “parc1_grupo_todos” [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Modificar el grupo propietario de la carpeta otros y todo su contenido para que sea del grupo “parc1_grupo_todos” 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -l /PuntoB/otro/ -d 
+drwxr-xr-- 2 parc1_user3 parc1_user3 4096 May 20 05:58 /PuntoB/otro/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -l /PuntoB/otro/ -d [K
+total 4
+-rw-rw-r-- 1 parc1_user3 parc1_user3 12 May 20 05:58 validar.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chown -R parc1_user3:parc1_grupo_todos /PuntoB/otro/ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chown -R parc1_user3:parc1_grupo_todos /PuntoB/otro/ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Pls -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-d 
+drwxr-xr-- 2 parc1_user3 parc1_grupo_todos 4096 May 20 05:58 /PuntoB/otro/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -l /PuntoB/otro/ -d [K
+total 4
+-rw-rw-r-- 1 parc1_user3 parc1_grupo_todos 12 May 20 05:58 validar.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Asignar permisos de escritura al grupo en la carpeta otros y todo su contenido 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Tenemos la forma que venimos usando siem[K[Kempre con octales.. o esta otra..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chmod -R g+w /PuntoB/otro/ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chmod -R g+w /PuntoB/otro/ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#Tenemos la forma que venimos usando siempre con octales.. o esta otra..[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CAsignar permisos de escritura al grupo en la carpeta otros y todo su contenido [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ls -l /PuntoB/otro/ [K -d 
+drwxrwxr-- 2 parc1_user3 parc1_grupo_todos 4096 May 20 05:58 /PuntoB/otro/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -l /PuntoB/otro/  -d [K
+total 4
+-rw-rw-r-- 1 parc1_user3 parc1_grupo_todos 12 May 20 05:58 validar.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #si se los quiero quitar..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #si se los quiero quitar..[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ls -l /PuntoB/otro/  -d [3@chmod -R g+w /PuntoB/otro/[C[1P[1@-
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chmod -R g-w /PuntoB/otro/ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P#si se los quiero quitar..[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ls -l /PuntoB/otro/   .d[K[K-d 
+drwxr-xr-- 2 parc1_user3 parc1_grupo_todos 4096 May 20 05:58 /PuntoB/otro/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -l /PuntoB/otro/   -d [K
+total 4
+-rw-r--r-- 1 parc1_user3 parc1_grupo_todos 12 May 20 05:58 validar.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ chmod [1@s[2@ud[1@o[1@ [C[C[C[C[C[C774 /PuntoB/otro/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chmod 774 /PuntoB/otro/[1Pls -l /PuntoB/otro/   -d 
+drwxrwxr-- 2 parc1_user3 parc1_grupo_todos 4096 May 20 05:58 /PuntoB/otro/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -l /PuntoB/otro/   -d [K
+total 4
+-rw-r--r-- 1 parc1_user3 parc1_grupo_todos 12 May 20 05:58 validar.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Realizar las modificaciones necesarias para que el usuario “parc1_user3” pueda conocer la existencia de un archivo en el directorio Grupo2, pero no pueda ver su contenido. 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #OK.. ahora si la forma rapida... 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "ls -l /PuntoB/Grupo2/" parc1_user3
+total 0
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "ls -l /PuntoB/Grupo2/" parc1_user3[1@ [1@-[1@d[1@ 
+drwxrw-r-x 2 parc1_user2 parc1_grupo2 4096 May 20 05:55 /PuntoB/Grupo2/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Vamos a adelantarnos y tirar el archivo de validar permisos.. asi ve[K[Kvemos bien esta parte...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #mod o[K[Ko [K[K[K[K[KAhora que conocemos la forma rapida... vamos con el modo Pro...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "whoami > /P[K[K/PuntoB/Grupo2/existe.txt" parc1_user3[K2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #y Validamos con los permisos actuales que puedo hacer con el usuario parc1_user3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "ls -l /PuntoB/Grupo2/" parc1_user3
+total 4
+-rw-rw-r-- 1 parc1_user2 parc1_user2 12 May 20 06:10 existe.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #E[KHasta ahi todo bien..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "cat /PuntoB/Grupo2/existe.txt " parc1_user3
+parc1_user2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Eso no lo deberia de poder hacer.... veamos lo[K[K[K[K[K[K[K[K[Krepacemos [K[K [Ks los permisos que tenemos..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -l /PuntoB/Grupo2/ -d 
+drwxrw-r-x 2 parc1_user2 parc1_grupo2 4096 May 20 06:10 /PuntoB/Grupo2/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -l /PuntoB/Grupo2/ -d [K
+total 4
+-rw-rw-r-- 1 parc1_user2 parc1_user2 12 May 20 06:10 existe.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chmod 774 /PuntoB/Grupo2/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Validamos[K[K[K[Kemos si ahora quedo bien..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "ls -l /PuntoB/Grupo2/" parc1_user3
+ls: cannot access '/PuntoB/Grupo2/existe.txt': Permission denied
+total 0
+-????????? ? ? ? ?            ? existe.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Bien... puedo ver que existe un arhicov[K[K[Kvo dentro del directorio con el usuario parc1_uer[K[Kser3... veamos si puedo c[Kver el contenido del archivo...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Bien... puedo ver que existe un arhivo dentro del directorio con el usuario parc1_user3... veamos si puedo ver el contenido del archivo...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo su -c "ls -l /PuntoB/Grupo2/" parc1_user3[K[C[C[C[C[10@existe.txt
+ls: cannot access '/PuntoB/Grupo2/existe.txt': Permission denied
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "ls -l /PuntoB/Grupo2/existe.txt" parc1_user3[C[C[1P[1P[1P[1P[1P[1@c[1@a[1@t[C[1@ 
+cat: /PuntoB/Grupo2/existe.txt: Permission denied
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Perfecto...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Ejecutemos los otros puntos del validar... 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Ejecutemos los otros puntos del validar... [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CPerfecto...[Ksudo su -c "cat  /PuntoB/Grupo2/existe.txt" parc1_user3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#Perfecto...[KEjecutemos los otros puntos del validar... [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kls[K[Ksudo ls -l [KR /PuntoB/[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -lR /PuntoB/
+/PuntoB/:
+total 12
+drwxrwx--- 2 parc1_user1 parc1_grupo1      4096 May 20 05:55 Grupo1
+drwxrwxr-- 2 parc1_user2 parc1_grupo2      4096 May 20 06:10 Grupo2
+drwxrwxr-- 2 parc1_user3 parc1_grupo_todos 4096 May 20 05:58 otro
+
+/PuntoB/Grupo1:
+total 0
+
+/PuntoB/Grupo2:
+total 4
+-rw-rw-r-- 1 parc1_user2 parc1_user2 12 May 20 06:10 existe.txt
+
+/PuntoB/otro:
+total 4
+-rw-r--r-- 1 parc1_user3 parc1_grupo_todos 12 May 20 05:58 validar.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sduo ca[K[K[K[K[K[K[Ksudo cat /PuntoB/otro/validar.txt
+parc1_user3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Ahi vamos con los otros puntos del validar permisos...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -[K-c "whoami >> /PuntoB/otro/validar.txt" parc1_user1
+bash: /PuntoB/otro/validar.txt: Permission denied
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "whoami >> /PuntoB/otro/validar.txt" parc1_user1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K#Me quedo mal el permiso del archivo... pq no lo hice recursivo... 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Vamos de nuevo con esa parte...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chmod .[K-R 774 /PuntoB/otro/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chmod -R 774 /PuntoB/otro/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#Vamos de nuevo con esa parte...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMe quedo mal el permiso del archivo... pq no lo hice recursivo... [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Psudo su -c "whoami >> /PuntoB/otro/validar.txt" parc1_user1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P#Ahi vamos con los otros puntos del validar permisos...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Psudo cat /PuntoB/otro/validar.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pls -lR /PuntoB/
+/PuntoB/:
+total 12
+drwxrwx--- 2 parc1_user1 parc1_grupo1      4096 May 20 05:55 Grupo1
+drwxrwxr-- 2 parc1_user2 parc1_grupo2      4096 May 20 06:10 Grupo2
+drwxrwxr-- 2 parc1_user3 parc1_grupo_todos 4096 May 20 05:58 otro
+
+/PuntoB/Grupo1:
+total 0
+
+/PuntoB/Grupo2:
+total 4
+-rw-rw-r-- 1 parc1_user2 parc1_user2 12 May 20 06:10 existe.txt
+
+/PuntoB/otro:
+total 4
+-rwxrwxr-- 1 parc1_user3 parc1_grupo_todos 12 May 20 05:58 validar.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ "[K#Ahora si .. esta con permisos de escritura al grupo en la carpeta y todo su contenido..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Ahora si .. esta con permisos de escritura al grupo en la carpeta y todo su contenido..[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ls -lR /PuntoB/[Kchmod -R 774 /PuntoB/otro/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#Vamos de nuevo con esa parte...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMe quedo mal el permiso del archivo... pq no lo hice recursivo... [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[35PVamos de nuevo con esa parte...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Psudo chmod -R 774 /PuntoB/otro/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#Vamos de nuevo con esa parte...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMe quedo mal el permiso del archivo... pq no lo hice recursivo... [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Psudo su -c "whoami >> /PuntoB/otro/validar.txt" parc1_user1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4P#Ahi vamos con los otros puntos del validar permisos...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo su -c "whoami >> /PuntoB/otro/validar.txt" parc1_user1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "whoami >> /PuntoB/otro/validar.txt" parc1_user1[K2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "whoami >> /PuntoB/otro/validar.txt" parc1_user2[K3[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@G[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@l[1@s[C[1@ [1@-[1@l[C[1@ [C[C[C[C[C[C[C[C[C[C[1@r[1@u[1@p[1@o[1@2
+ls: cannot access '/PuntoB/Grupo2/existe.txt': Permission denied
+total 0
+-????????? ? ? ? ?            ? existe.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo su -c "ls -l  /PuntoB/Grupo2" parc1_user3[1@/[1@e[1@x[1@i[1@s[1@t[1@e[1@.[1@t[1@x[1@t[1P[1P[C[1P[1P[1P[1@c[1@a[1@t
+cat: /PuntoB/Grupo2/existe.txt: Permission denied
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Listo con las validaciones... todos los permisos son correctos...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo cat /PuntoB/otro/validar.txt 
+parc1_user3
+parc1_user1
+parc1_user2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Fin del punto C
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ logout
+Connection to 192.168.56.2 closed.
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ [?2004l
+exit
+
+Script terminado en 2023-05-20 03:18:34-03:00 [CÓDIGO_SALIDA_ORDEN="0"]

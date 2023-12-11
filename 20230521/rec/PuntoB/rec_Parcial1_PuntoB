@@ -1,0 +1,223 @@
+Script iniciado en 2023-05-18 02:58:07-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="211" LINES="46"]
+]777;notify;Command completed;exit\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ (reverse-i-search)`': [Kv': ssh [7mv[27magrant@192.168.56.2a': ssh [7mva[27mgrant@192.168.56.2[gferrer@pc-fusion 1erParcial]$ ssh vagrant@192.168.56.2
+[?2004l]777;preexec\vagrant@192.168.56.2's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-148-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu May 18 05:58:14 UTC 2023
+
+  System load:  0.0               Processes:               136
+  Usage of /:   4.1% of 38.70GB   Users logged in:         1
+  Memory usage: 12%               IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for enp0s8: 192.168.56.2
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '22.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Thu May 18 05:33:07 2023 from 192.168.56.1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Punto B
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo useradd -m -s /bin/bash -c "Usuario 1" -G parc1_grupo1
+useradd: group 'parc1_grupo1' does not exist
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo [K[K[K[K[K#Obviamente el grupo no existe ... ayq [K[K[K[Khay que crearlo antes...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo group[K[K[K[K
+gapplication          geqn                  ginstall-info         gpg-agent             gpic                  groups                grub-kbdcomp          grub-mkrescue         gtbl
+gawk                  getcap                gio                   gpg-connect-agent     grep                  growpart              grub-macbless         grub-mkstandalone     gunzip
+gawklibpath_append    getconf               gio-querymodules      gpg-wks-server        gresource             grpck                 grub-menulst2cfg      grub-mount            gzexe
+gawklibpath_default   getent                git                   gpg-zip               groff                 grpconv               grub-mkconfig         grub-ntldr-img        gzip
+gawklibpath_prepend   getkeycodes           git-receive-pack      gpgcompose            grog                  grpunconv             grub-mkdevicemap      grub-probe            
+gawkpath_append       getopt                git-shell             gpgconf               grops                 grub-bios-setup       grub-mkfont           grub-reboot           
+gawkpath_default      getopts               git-upload-archive    gpgparsemail          grotty                grub-editenv          grub-mkimage          grub-render-label     
+gawkpath_prepend      getpcaps              git-upload-pack       gpgsm                 groupadd              grub-file             grub-mklayout         grub-script-check     
+gdbus                 gettext               glib-compile-schemas  gpgsplit              groupdel              grub-fstest           grub-mknetdir         grub-set-default      
+gdisk                 gettext.sh            gpasswd               gpgtar                groupmems             grub-glue-efi         grub-mkpasswd-pbkdf2  grub-syslinux2cfg     
+genl                  getty                 gpg                   gpgv                  groupmod              grub-install          grub-mkrelpath        gsettings             
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo g[Kgroup
+groupadd   groupdel   groupmems  groupmod   groups     
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo groupadd parc1_grupo1 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo groupadd parc1_grupo1 [K[K2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo groupadd parc1_grupo21 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#Obviamente el grupo no existe ... hay que crearlo antes...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo useradd -m -s /bin/bash -c "Usuario 1" -G parc1_grupo1
+Usage: useradd [options] LOGIN
+       useradd -D
+       useradd -D [options]
+
+Options:
+      --badnames                do not check for bad names
+  -b, --base-dir BASE_DIR       base directory for the home directory of the
+                                new account
+      --btrfs-subvolume-home    use BTRFS subvolume for home directory
+  -c, --comment COMMENT         GECOS field of the new account
+  -d, --home-dir HOME_DIR       home directory of the new account
+  -D, --defaults                print or change default useradd configuration
+  -e, --expiredate EXPIRE_DATE  expiration date of the new account
+  -f, --inactive INACTIVE       password inactivity period of the new account
+  -g, --gid GROUP               name or ID of the primary group of the new
+                                account
+  -G, --groups GROUPS           list of supplementary groups of the new
+                                account
+  -h, --help                    display this help message and exit
+  -k, --skel SKEL_DIR           use this alternative skeleton directory
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -l, --no-log-init             do not add the user to the lastlog and
+                                faillog databases
+  -m, --create-home             create the user's home directory
+  -M, --no-create-home          do not create the user's home directory
+  -N, --no-user-group           do not create a group with the same name as
+                                the user
+  -o, --non-unique              allow to create users with duplicate
+                                (non-unique) UID
+  -p, --password PASSWORD       encrypted password of the new account
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -s, --shell SHELL             login shell of the new account
+  -u, --uid UID                 user ID of the new account
+  -U, --user-group              create a group with the same name as the user
+  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user mapping
+      --extrausers              Use the extra users database
+
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo useradd -m -s /bin/bash -c "Usuario 1" -G parc1_grupo1^C
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sugo [K[K[Kdo grep grupo |grep /[K[K[K[K[K[K[K/etc/group
+parc1_grupo1:x:1002:
+parc1_grupo2:x:1003:
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo grep grupo /etc/groupuseradd -m -s /bin/bash -c "Usuario 1" -G parc1_grupo1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C parc1_user1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #me habia olvidado el usuaro[Kio XD
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #me habia olvidado el usuario XD[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo useradd -m -s /bin/bash -c "Usuario 1" -G parc1_grupo1 parc1_user1[K2[C[1P parc1_user22 parc1_user2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo useradd -m -s /bin/bash -c "Usuario 1" -G parc1_grupo2 parc1_user2[K3[12P parc1_user3[3P parc1_user3
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep user /etc/passwd|[K /etc/group
+group   group-  
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep user /etc/passwd /etc/group
+group   group-  
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep user /etc/passwd /etc/group[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep user /etc/passwd /etc/group
+[35m[K/etc/passwd[m[K[36m[K:[m[Kfwupd-refresh:x:112:116:fwupd-refresh [01;31m[Kuser[m[K,,,:/run/systemd:/usr/sbin/nologin
+[35m[K/etc/passwd[m[K[36m[K:[m[Kparc1_[01;31m[Kuser[m[K1:x:1002:1004:Usuario 1:/home/parc1_[01;31m[Kuser[m[K1:/bin/bash
+[35m[K/etc/passwd[m[K[36m[K:[m[Kparc1_[01;31m[Kuser[m[K2:x:1003:1005:Usuario 1:/home/parc1_[01;31m[Kuser[m[K2:/bin/bash
+[35m[K/etc/passwd[m[K[36m[K:[m[Kparc1_[01;31m[Kuser[m[K3:x:1004:1006:Usuario 1:/home/parc1_[01;31m[Kuser[m[K3:/bin/bash
+[35m[K/etc/group[m[K[36m[K:[m[K[01;31m[Kuser[m[Ks:x:100:
+[35m[K/etc/group[m[K[36m[K:[m[Kparc1_grupo1:x:1002:parc1_[01;31m[Kuser[m[K1
+[35m[K/etc/group[m[K[36m[K:[m[Kparc1_grupo2:x:1003:parc1_[01;31m[Kuser[m[K2
+[35m[K/etc/group[m[K[36m[K:[m[Kparc1_[01;31m[Kuser[m[K1:x:1004:
+[35m[K/etc/group[m[K[36m[K:[m[Kparc1_[01;31m[Kuser[m[K2:x:1005:
+[35m[K/etc/group[m[K[36m[K:[m[Kparc1_[01;31m[Kuser[m[K3:x:1006:
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #valido ... esta todo bien.
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ t[K#tambien puedo hacer..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ id parc1_user1
+uid=1002(parc1_user1) gid=1004(parc1_user1) groups=1004(parc1_user1),1002(parc1_grupo1)
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ id parc1_user1[K2
+uid=1003(parc1_user2) gid=1005(parc1_user2) groups=1005(parc1_user2),1003(parc1_grupo2)
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ id parc1_user2[K3
+uid=1004(parc1_user3) gid=1006(parc1_user3) groups=1006(parc1_user3)
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #creo carpeta... 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -ld /
+drwxr-xr-x 19 root root 4096 May 18 05:31 [0m[01;34m/[0m
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #solo root puede escribir asique tiro de sudo
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo mkdir /PuntoB/{Grupo}{}1},}2}[C},}o}t}r}o}-/PuntoB/{Grupo{1,2},otro}p/PuntoB/{Grupo{1,2},otro} /PuntoB/{Grupo{1,2},otro}
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ tree /PuntoB/
+[01;34m/PuntoB/[00m
+├── [01;34mGrupo1[00m
+├── [01;34mGrupo2[00m
+└── [01;34motro[00m
+
+3 directories, 0 files
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -lR /PuntoB/
+/PuntoB/:
+total 12
+drwxr-xr-x 2 root root 4096 May 18 06:03 [0m[01;34mGrupo1[0m
+drwxr-xr-x 2 root root 4096 May 18 06:03 [01;34mGrupo2[0m
+drwxr-xr-x 2 root root 4096 May 18 06:03 [01;34motro[0m
+
+/PuntoB/Grupo1:
+total 0
+
+/PuntoB/Grupo2:
+total 0
+
+/PuntoB/otro:
+total 0
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #ahroa ca[K[Ka cambiar los owner y los permisos...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ chown par[K[K[Kparc1_user1:parc1_grupo1 /PuntoB/Grupo1/[K
+chown: changing ownership of '/PuntoB/Grupo1': Operation not permitted
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ chown parc1_user1:parc1_grupo1 /PuntoB/Grupo1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@s[1@u[1@d[1@o[1@ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chown parc1_user1:parc1_grupo1 /PuntoB/Grupo1[K2[1P /PuntoB/Grupo22 /PuntoB/Grupo2[C[C[1P[1@2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chown parc1_user2:parc1_grupo2 /PuntoB/Grupo2[K[K[K[K[K[Kotro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro[1P /PuntoB/otro3 /PuntoB/otro: /PuntoB/otroparc1_user3: /PuntoB/otro[1P /PuntoB/otro[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chown parc1_user3:parc1_user3 /PuntoB/otro2:parc1_grupo2 /PuntoB/Grupo21:parc1_grupo1 /PuntoB/Grupo1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P#ahroa a cambiar los owner y los permisos...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Pls -lR /PuntoB/[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -lR /PuntoB/
+/PuntoB/:
+total 12
+drwxr-xr-x 2 parc1_user1 parc1_grupo1 4096 May 18 06:03 [0m[01;34mGrupo1[0m
+drwxr-xr-x 2 parc1_user2 parc1_grupo2 4096 May 18 06:03 [01;34mGrupo2[0m
+drwxr-xr-x 2 parc1_user3 parc1_user3  4096 May 18 06:03 [01;34motro[0m
+
+/PuntoB/Grupo1:
+total 0
+
+/PuntoB/Grupo2:
+total 0
+
+/PuntoB/otro:
+total 0
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #lisot con los owner..[1P[C[1@o
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #ahora a cambiar los permisos
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ chmod 770 /proc/[K[K[K[K[KPuntoB/Grupo1/[K
+chmod: changing permissions of '/PuntoB/Grupo1': Operation not permitted
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ chmod 770 /PuntoB/Grupo1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@s[1@u[1@d[1@o[1@ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chmod 770 /PuntoB/Grupo1[K2[1P /PuntoB/Grupo2[1P /PuntoB/Grupo26 /PuntoB/Grupo25 /PuntoB/Grupo2
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo chmod 765 /PuntoB/Grupo2[K[K[K[K[K[Kotro/[1P[C4 /PuntoB/otro/
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Validemos..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Validemos..sudo chmod 754 /PuntoB/otro/65 /PuntoB/Grupo270 /PuntoB/Grupo1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#ahora a cambiar los permisos[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Plisto con los owner..[7Pls -lR /PuntoB/[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -lR /PuntoB/
+/PuntoB/:
+total 12
+drwxrwx--- 2 parc1_user1 parc1_grupo1 4096 May 18 06:03 [0m[01;34mGrupo1[0m
+drwxrw-r-x 2 parc1_user2 parc1_grupo2 4096 May 18 06:03 [01;34mGrupo2[0m
+drwxr-xr-- 2 parc1_user3 parc1_user3  4096 May 18 06:03 [01;34motro[0m
+ls: cannot open directory '/PuntoB/Grupo1': Permission denied
+
+/PuntoB/Grupo2:
+total 0
+
+/PuntoB/otro:
+total 0
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -lR /PuntoB/[1@s[1@u[1@d[1@o[1@ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo ls -lR /PuntoB/
+/PuntoB/:
+total 12
+drwxrwx--- 2 parc1_user1 parc1_grupo1 4096 May 18 06:03 Grupo1
+drwxrw-r-x 2 parc1_user2 parc1_grupo2 4096 May 18 06:03 Grupo2
+drwxr-xr-- 2 parc1_user3 parc1_user3  4096 May 18 06:03 otro
+
+/PuntoB/Grupo1:
+total 0
+
+/PuntoB/Grupo2:
+total 0
+
+/PuntoB/otro:
+total 0
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Genero archivo
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ mkdir Rta_examen[1P_examen[1P_examenT_examenA_examen[C[C[C[C[C[C[C
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -ld /PuntoB/* 
+drwxrwx--- 2 parc1_user1 parc1_grupo1 4096 May 18 06:03 [0m[01;34m/PuntoB/Grupo1[0m
+drwxrw-r-x 2 parc1_user2 parc1_grupo2 4096 May 18 06:03 [01;34m/PuntoB/Grupo2[0m
+drwxr-xr-- 2 parc1_user3 parc1_user3  4096 May 18 06:03 [01;34m/PuntoB/otro[0m
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -ld /PuntoB/* > P[KRTA_examen/PuntoB.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoB.txt
+drwxrwx--- 2 parc1_user1 parc1_grupo1 4096 May 18 06:03 /PuntoB/Grupo1
+drwxrw-r-x 2 parc1_user2 parc1_grupo2 4096 May 18 06:03 /PuntoB/Grupo2
+drwxr-xr-- 2 parc1_user3 parc1_user3  4096 May 18 06:03 /PuntoB/otro
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Fin de l [K[K[Kl punto B
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ logout
+Connection to 192.168.56.2 closed.
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ exit
+[?2004l]777;preexec\exit
+
+Script terminado en 2023-05-18 03:07:39-03:00 [CÓDIGO_SALIDA_ORDEN="0"]

@@ -1,0 +1,151 @@
+Script iniciado en 2023-05-21 20:02:02-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="190" LINES="44"]
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ ssh vagrant@192.168.56.2
+[?2004l]777;preexec\vagrant@192.168.56.2's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-148-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun May 21 23:02:07 UTC 2023
+
+  System load:  0.0               Processes:               134
+  Usage of /:   5.1% of 38.70GB   Users logged in:         0
+  Memory usage: 12%               IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for enp0s8: 192.168.56.2
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '22.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sun May 21 22:52:11 2023 from 192.168.56.1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Punto G
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #ok usuario y shel..[K[Kl ...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/passwd
+[01;31m[Kvagrant[m[K:x:1000:1000:,,,:/home/[01;31m[Kvagrant[m[K:/bin/bash
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/passwd |awk '{ [Kprint $1 }'[1@"[1@U[1@s[1@u[1@a[1@r[1@i[1@o[1@=
+awk: cmd. line:1: {print "Usuario=$1 }
+awk: cmd. line:1:        ^ unterminated string
+awk: cmd. line:1: {print "Usuario=$1 }
+awk: cmd. line:1:        ^ syntax error
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/passwd |awk '{print "Usuario=$1 }'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@"
+Usuario=vagrant:x:1000:1000:,,,:/home/vagrant:/bin/bash
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/passwd |awk '{print "Usuario="$1 }'[C[1@-[1@F[1@ [C[1@'[1@:[C[1@'[1@ 
+Usuario=vagrant
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > ^C
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ mkdir RTA_examen/PuntoG
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ mkdir RTA_examen/PuntoG[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/info_usuario.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/info_usuario.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir RTA_examen/PuntoG[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }'[1P }'* }'[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
+awk: cmd. line:1: {print $* }
+awk: cmd. line:1:         ^ syntax error
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/passwd |awk -F ':' '{print $* }'[1P }'[1P }'
+vagrant:x:1000:1000:,,,:/home/vagrant:/bin/bash
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #columna 7 si no conte bien..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #columna 7 si no conte bien..[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep $(whoami) /etc/passwd |awk -F ':' '{print  }'$ }'7 }'
+/bin/bash
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/passwd |awk -F ':' '{print $7 }'[C[1@"[1@s[1@h[1@e[1@l[1@=[1@l[C[1@"
+shell=/bin/bash
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/info_usuario.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #clave...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #clave...grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/info_usuario.txt[K[10P[C[1P[1P[1P[1P[1P[1P[1@s[1@h[1@a[3@dow
+-bash: syntax error near unexpected token `newline'
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ grep $(whoami) /etc/shadow |awk -F ':' '{print  }' >> [C[C[C[C[C[C[C[1@s[1@u[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K
+vagrant:$6$Lj1VmNKvHxC77YBc$fTNmxJj6J7.lCbZBxFrP3KuffsIuA8nfwin7c9TR3Y7zBAQqPXA/JcLpU8qz6fkPO2WX8Vn4XjftE9daa9LPe.:19492:0:99999:7:::
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo grep $(whoami) /etc/shadow |awk -F ':' '{print  }' 
+vagrant:$6$Lj1VmNKvHxC77YBc$fTNmxJj6J7.lCbZBxFrP3KuffsIuA8nfwin7c9TR3Y7zBAQqPXA/JcLpU8qz6fkPO2WX8Vn4XjftE9daa9LPe.:19492:0:99999:7:::
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo grep $(whoami) /etc/shadow |awk -F ':' '{print  }' [1@"[1P[1@$[1@2[1@"[1@"[1@C[1@l[1@a[1@v[1@e[1@=[1@ [C[1P
+Clave= $6$Lj1VmNKvHxC77YBc$fTNmxJj6J7.lCbZBxFrP3KuffsIuA8nfwin7c9TR3Y7zBAQqPXA/JcLpU8qz6fkPO2WX8Vn4XjftE9daa9LPe.
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave= "$2}' >> RTA_examen/in[K[K
+Memoria.txt  PuntoD.txt   PuntoE.txt   PuntoF/      PuntoG/      
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave= "$2}' >> RTA_examen/PuntoG/info_usuario.txt [1P
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Listo...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ l[Khistory > RTA_examen/PuntoG/historial_$()d)a)t)e) )+)")")%")Y")%")m")%")d")_")%")H")%")M")[C[C.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -l RTA_examen/PuntoG/
+total 40
+-rw-rw-r-- 1 vagrant vagrant 34842 May 21 23:07 historial_20230521_2307.txt
+-rw-rw-r-- 1 vagrant vagrant   145 May 21 23:06 info_usuario.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ tail -n5 RTA_examen/PuntoG/historial_20230521_2307.txt
+  712  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print  }' 
+  713  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave= "$2}' 
+  714  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave="$2}' >> RTA_examen/PuntoG/info_usuario.txt 
+  715  #Listo...
+  716  history > RTA_examen/PuntoG/historial_$(date +"%Y%m%d_%H%M").txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grpe info_usuario
+
+Command 'grpe' not found, did you mean:
+
+  command 'grape' from snap groovy (3.0.4)
+  command 'nrpe' from deb nagios-nrpe-server (4.0.0-2ubuntu1)
+  command 'grep' from deb grep (3.4-1)
+  command 'grpn' from deb grpn (1.4.1-1)
+  command 'gvpe' from deb gvpe (3.1-2build2)
+  command 'gpre' from deb firebird3.0-utils (3.0.5.33220.ds4-1build2)
+
+See 'snap info <snapname>' for additional versions.
+
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grpe info_usuario[1P info_usuario[1P info_usuario[1P info_usuarior info_usuarioe info_usuariop info_usuario[C info_usuario
+  703  grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/[01;31m[Kinfo_usuario[m[K.txt
+  709  grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/[01;31m[Kinfo_usuario[m[K.txt
+  714  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave="$2}' >> RTA_examen/PuntoG/[01;31m[Kinfo_usuario[m[K.txt 
+  719  history |grpe [01;31m[Kinfo_usuario[m[K
+  720  history |grep  [01;31m[Kinfo_usuario[m[K
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grep  info_usuario.txt
+  703  grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/[01;31m[Kinfo_usuario.txt[m[K
+  709  grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/[01;31m[Kinfo_usuario.txt[m[K
+  714  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave="$2}' >> RTA_examen/PuntoG/[01;31m[Kinfo_usuario.txt[m[K 
+  721  history |grep  [01;31m[Kinfo_usuario.txt[m[K
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grep  info_usuario.txt |egrep '703|709|714'
+  [01;31m[K703[m[K  grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/info_usuario.txt
+  [01;31m[K709[m[K  grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/info_usuario.txt
+  [01;31m[K714[m[K  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave="$2}' >> RTA_examen/PuntoG/info_usuario.txt 
+  722  history |grep  info_usuario.txt |egrep '[01;31m[K703[m[K|[01;31m[K709[m[K|[01;31m[K714[m[K'
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grep  info_usuario.txt |egrep '703|709|714' |grep -v history
+  703  grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/info_usuario.txt
+  709  grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/info_usuario.txt
+  714  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave="$2}' >> RTA_examen/PuntoG/info_usuario.txt 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grep  info_usuario.txt |egrep '703|709|714' |grep -v history > RTA_examen/PuntoG/PuntoG_$()w)h)o)a)m)i)[C.sh
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoG/PuntoG_$(whoami).sh
+  703  grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/info_usuario.txt
+  709  grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/info_usuario.txt
+  714  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave="$2}' >> RTA_examen/PuntoG/info_usuario.txt 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ ls -l RTA_examen/PuntoG/PuntoG_$(whoami).sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+total 44
+-rw-rw-r-- 1 vagrant vagrant   324 May 21 23:09 PuntoG_vagrant.sh
+-rw-rw-r-- 1 vagrant vagrant 34842 May 21 23:07 historial_20230521_2307.txt
+-rw-rw-r-- 1 vagrant vagrant   145 May 21 23:06 info_usuario.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #si q[Kle queremos sacar los nros... tambien lo podemos hacer.. con un ser..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #sed
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #sedi le queremos sacar los nros... tambien lo podemos hacer.. con un ser..[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l RTA_examen/PuntoG/[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat RTA_examen/PuntoG/PuntoG_$(whoami).sh
+  703  grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/info_usuario.txt
+  709  grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/info_usuario.txt
+  714  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave="$2}' >> RTA_examen/PuntoG/info_usuario.txt 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoG/PuntoG_$(whoami).sh[K[K[K[K[K[K[K[K[K[K[K[Kvagrant.sh [C[3P[1@s[1@e[1@d[C[1@ [1@-[1@i[C[1@ [1@'[1@s[1@/[C[7@ 703   [1@/[1@/[1@'[C[1@ [C[1@ 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sed -i 's/  703  //'   RTA_examen/PuntoG/PuntoG_vagrant.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat RTA_examen/PuntoG/PuntoG_$(whoami).sh
+grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/info_usuario.txt
+  709  grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/info_usuario.txt
+  714  sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave="$2}' >> RTA_examen/PuntoG/info_usuario.txt 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoG/PuntoG_$(whoami).sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i 's/  703  //'   RTA_examen/PuntoG/PuntoG_vagrant.sh [1P[1@9
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sed -i 's/  709  //'   RTA_examen/PuntoG/PuntoG_vagrant.sh [1P[1P[1@1[1@4
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sed -i 's/  714  //'   RTA_examen/PuntoG/PuntoG_vagrant.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C09[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat RTA_examen/PuntoG/PuntoG_$(whoami).sh
+grep $(whoami) /etc/passwd |awk -F ':' '{print "Usuario="$1 }' > RTA_examen/PuntoG/info_usuario.txt
+grep $(whoami) /etc/passwd |awk -F ':' '{print "shell="$7 }' >> RTA_examen/PuntoG/info_usuario.txt
+sudo grep $(whoami) /etc/shadow |awk -F ':' '{print "Clave="$2}' >> RTA_examen/PuntoG/info_usuario.txt 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #ahora si LS[KISTO...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ logout
+Connection to 192.168.56.2 closed.
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ [?2004l
+exit
+
+Script terminado en 2023-05-21 20:11:27-03:00 [CÓDIGO_SALIDA_ORDEN="0"]

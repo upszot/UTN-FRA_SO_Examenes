@@ -1,0 +1,102 @@
+Script iniciado en 2023-05-20 03:34:28-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="190" LINES="44"]
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ ssh vagrant@192.168.56.2
+[?2004l]777;preexec\vagrant@192.168.56.2's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-148-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat May 20 06:34:33 UTC 2023
+
+  System load:  0.0               Processes:               122
+  Usage of /:   4.7% of 38.70GB   Users logged in:         0
+  Memory usage: 12%               IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for enp0s8: 192.168.56.2
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '22.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sat May 20 06:28:10 2023 from 192.168.56.1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Punto E 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #[Kmkdir -p Ejercicio_E/{}c}o}r}r}e}o},}e}m}i}s}o}r},}r}e}c}e}p}t}o}r}{emisor,receptor}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C}/}{}c}a}r}t}a},}c}h}e}q}u}e}[C}[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C{,{emisor,receptor}/{carta,cheque}}},{emisor,receptor}/{carta,cheque}}/{},{emisor,receptor}/{carta,cheque}}[C[Cc},{emisor,receptor}/{carta,cheque}}a},{emisor,receptor}/{carta,cheque}}r},{emisor,receptor}/{carta,cheque}}t},{emisor,receptor}/{carta,cheque}}e},{emisor,receptor}/{carta,cheque}}r},{emisor,receptor}/{carta,cheque}}o},{emisor,receptor}/{carta,cheque}}[1Pcartero},{emisor,receptor}/{carta,cheque}}[C[C[C[C[C[C[C{},{emisor,receptor}/{carta,cheque}}1},{emisor,receptor}/{carta,cheque}}.},{emisor,receptor}/{carta,cheque}}.},{emisor,receptor}/{carta,cheque}}1},{emisor,receptor}/{carta,cheque}}0},{emisor,receptor}/{carta,cheque}}
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ tree Ejercicio_E
+[01;34mEjercicio_E[00m
+├── [01;34mcorreo[00m
+│   ├── [01;34mcartero1[00m
+│   ├── [01;34mcartero10[00m
+│   ├── [01;34mcartero2[00m
+│   ├── [01;34mcartero3[00m
+│   ├── [01;34mcartero4[00m
+│   ├── [01;34mcartero5[00m
+│   ├── [01;34mcartero6[00m
+│   ├── [01;34mcartero7[00m
+│   ├── [01;34mcartero8[00m
+│   └── [01;34mcartero9[00m
+├── [01;34memisor[00m
+│   ├── [01;34mcarta[00m
+│   └── [01;34mcheque[00m
+└── [01;34mreceptor[00m
+    ├── [01;34mcarta[00m
+    └── [01;34mcheque[00m
+
+17 directories, 0 files
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ rm -rf Ejercicio_E 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #lo muestro de nuevo...[H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #lo muestro de nuevo...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ mkdir Ejercicio_E[C[C[C[C[C[C Ejercicio_E- Ejercicio_Ep Ejercicio_E[C Ejercicio_E[C[C[C[C[C[C[C[C[C[C[C[C/{correo[K[K[K[K[K[Kemisor,receptor}/{cartas,cheques[K} #ahora deberia de ver donde meto el correo con los carteros..[K[K[K[K[K[K[K[K[K[K[K[C[1@{[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C, c o r r e o } [1@/[1@c[1@a[1@r[1@t[1@e[1@r[1@o[1@s[1@{[1@1[1@.[1@.[1@1[1@0[C} 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #La hora de la verdad...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ tree Ejercicio_E
+[01;34mEjercicio_E[00m
+├── [01;34mcorreo[00m
+│   ├── [01;34mcarteros1[00m
+│   ├── [01;34mcarteros10[00m
+│   ├── [01;34mcarteros2[00m
+│   ├── [01;34mcarteros3[00m
+│   ├── [01;34mcarteros4[00m
+│   ├── [01;34mcarteros5[00m
+│   ├── [01;34mcarteros6[00m
+│   ├── [01;34mcarteros7[00m
+│   ├── [01;34mcarteros8[00m
+│   └── [01;34mcarteros9[00m
+├── [01;34memisor[00m
+│   ├── [01;34mcartas[00m
+│   └── [01;34mcheque[00m
+└── [01;34mreceptor[00m
+    ├── [01;34mcartas[00m
+    └── [01;34mcheque[00m
+
+17 directories, 0 files
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grep Ejercicio_E
+  591  mkdir -p [01;31m[KEjercicio_E[m[K/{correo/cartero{1..10},{emisor,receptor}/{carta,cheque}}
+  592  tree [01;31m[KEjercicio_E[m[K
+  593  rm -rf [01;31m[KEjercicio_E[m[K 
+  595  mkdir -p  [01;31m[KEjercicio_E[m[K/{{emisor,receptor}/{cartas,cheque},correo/carteros{1..10}} 
+  597  tree [01;31m[KEjercicio_E[m[K
+  598  history |grep [01;31m[KEjercicio_E[m[K
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grep Ejercicio_E |grep mkdir |grep -v history
+  591  mkdir -p Ejercicio_E/{correo/cartero{1..10},{emisor,receptor}/{carta,cheque}}
+  595  mkdir -p  Ejercicio_E/{{emisor,receptor}/{cartas,cheque},correo/carteros{1..10}} 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grep Ejercicio_E |grep mkdir |grep -v history > Rt[Kt[KTA_examen/PuntoD.txt [K[K[K[K[K[KE.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoE.txt
+  591  mkdir -p Ejercicio_E/{correo/cartero{1..10},{emisor,receptor}/{carta,cheque}}
+  595  mkdir -p  Ejercicio_E/{{emisor,receptor}/{cartas,cheque},correo/carteros{1..10}} 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Fin del punto E...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ logout
+Connection to 192.168.56.2 closed.
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ [?2004l
+exit
+
+Script terminado en 2023-05-20 03:39:57-03:00 [CÓDIGO_SALIDA_ORDEN="0"]

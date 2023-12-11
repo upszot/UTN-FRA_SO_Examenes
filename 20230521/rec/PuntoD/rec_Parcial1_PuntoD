@@ -1,0 +1,126 @@
+Script iniciado en 2023-05-20 03:28:04-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="190" LINES="44"]
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ ssh vagrant@192.168.56.2
+[?2004l]777;preexec\vagrant@192.168.56.2's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-148-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat May 20 06:28:09 UTC 2023
+
+  System load:  0.0               Processes:               122
+  Usage of /:   4.7% of 38.70GB   Users logged in:         0
+  Memory usage: 12%               IPv4 address for enp0s3: 10.0.2.15
+  Swap usage:   0%                IPv4 address for enp0s8: 192.168.56.2
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '22.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sat May 20 06:27:32 2023 from 192.168.56.1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Ejercicio Punto D
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ mkdir E[K-p Ejercicio_D/{libros,musica,peliculas}/autores{1..5} 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ tree Ejercicio_D/
+[01;34mEjercicio_D/[00m
+├── [01;34mlibros[00m
+│   ├── [01;34mautores1[00m
+│   ├── [01;34mautores2[00m
+│   ├── [01;34mautores3[00m
+│   ├── [01;34mautores4[00m
+│   └── [01;34mautores5[00m
+├── [01;34mmusica[00m
+│   ├── [01;34mautores1[00m
+│   ├── [01;34mautores2[00m
+│   ├── [01;34mautores3[00m
+│   ├── [01;34mautores4[00m
+│   └── [01;34mautores5[00m
+└── [01;34mpeliculas[00m
+    ├── [01;34mautores1[00m
+    ├── [01;34mautores2[00m
+    ├── [01;34mautores3[00m
+    ├── [01;34mautores4[00m
+    └── [01;34mautores5[00m
+
+18 directories, 0 files
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ find Ejercicio_D/ -type d 
+Ejercicio_D/
+Ejercicio_D/libros
+Ejercicio_D/libros/autores2
+Ejercicio_D/libros/autores3
+Ejercicio_D/libros/autores4
+Ejercicio_D/libros/autores5
+Ejercicio_D/libros/autores1
+Ejercicio_D/musica
+Ejercicio_D/musica/autores2
+Ejercicio_D/musica/autores3
+Ejercicio_D/musica/autores4
+Ejercicio_D/musica/autores5
+Ejercicio_D/musica/autores1
+Ejercicio_D/peliculas
+Ejercicio_D/peliculas/autores2
+Ejercicio_D/peliculas/autores3
+Ejercicio_D/peliculas/autores4
+Ejercicio_D/peliculas/autores5
+Ejercicio_D/peliculas/autores1
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ bueno [1@#[1@ [C[C[C[C[C[C ahroa llevar el comando de como lo hice a un archivo... o con un echo... o sacarlo del history..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ # bueno  ahroa llevar el comando de como lo hice a un archivo... o con un echo... o sacarlo del history..[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind Ejercicio_D/ -type d [K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Ptree Ejercicio_D/mkdir -p Ejercicio_D/{libros,musica,peliculas}/autores{1..5} [1@e[1@c[1@h[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@"[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" > RTA_examen/PuntoD.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoD.txt
+ mkdir -p Ejercicio_D/{libros,musica,peliculas}/autores{1..5} 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Esa es una... la otra..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ > RTA_examen/PuntoD.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ > RTA_examen/PuntoD.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#Esa es una... la otra..[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat RTA_examen/PuntoD.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grpe [K[K[K[Krep P[KEjercicio
+  541  mkdir -p [01;31m[KEjercicio[m[K_D/{libros,musica,peliculas}/autores{1..5} 
+  542  tree [01;31m[KEjercicio[m[K_D/
+  543  find [01;31m[KEjercicio[m[K_D/ -type d 
+  545  #Esta seria una forma... echo "mkdir -p [01;31m[KEjercicio[m[K_D/{libros,musica,peliculas}/autores{1..5} " > RTA_examen/PuntoD.txt 
+  547  history |grep [01;31m[KEjercicio[m[K_D
+  549  rm -rf [01;31m[KEjercicio[m[K_D/
+  550  mkdir -p [01;31m[KEjercicio[m[K_D/{libros,musica,peliculas}/autores{1..5} 
+  552  history |grep [01;31m[KEjercicio[m[K_D
+  564  rm -rf [01;31m[KEjercicio[m[K_D/
+  566  #[01;31m[KEjercicio[m[K Punto D
+  567  mkdir -p [01;31m[KEjercicio[m[K_D/{libros,musica,peliculas}/autores{1..5} 
+  568  tree [01;31m[KEjercicio[m[K_D/
+  569  find [01;31m[KEjercicio[m[K_D/ -type d 
+  571  echo " mkdir -p [01;31m[KEjercicio[m[K_D/{libros,musica,peliculas}/autores{1..5} " > RTA_examen/PuntoD.txt
+  576  history |grep [01;31m[KEjercicio[m[K
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ # como veran.. lo ejecute muchas veces... supongamos que alguna esta mal.. y la que vem[Ko que esta bien es la de lia[K[Ka linea 567... entonces 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ history |grep 567
+  [01;31m[K567[m[K  mkdir -p Ejercicio_D/{libros,musica,peliculas}/autores{1..5} 
+  577  # como veran.. lo ejecute muchas veces... supongamos que alguna esta mal.. y la que veo que esta bien es la de la linea [01;31m[K567[m[K... entonces 
+  578  history |grep [01;31m[K567[m[K
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Sigamos filtrando..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Sigamos filtrando..[3Phistory |grep 567 |grep -v histore[Ky [1@e[1P[1@e[C[C[C[C[C[C[C[C[1@'[C[C[C[C[C[C[C[C|[K[K|#'
+  567  mkdir -p Ejercicio_D/{libros,musica,peliculas}/autores{1..5} 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #ahi esta..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #ahi esta..history |grep 567 |egrep -v 'history|#' > RTA_examen/PuntoD.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoD.txt
+  567  mkdir -p Ejercicio_D/{libros,musica,peliculas}/autores{1..5} 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #con eso esta bien... ahora si qui[K[K[Kse ponen en esqui[K[K[K[Kx[Ksquisitos y quieren quitarle el nro de al[Kdelante...
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ [H[2J]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #con eso esta bien... ahora si se ponen en esquisitos y quieren quitarle el nro de adelante...[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat RTA_examen/PuntoD.txt[K
+  567  mkdir -p Ejercicio_D/{libros,musica,peliculas}/autores{1..5} 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ cat RTA_examen/PuntoD.txt |sed -i |sed -i [K[4P[1P[C[C[C[C[C[C[C's/ 567  //g' RTA_examen/PuntoD.txt
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ sed -i 's/ 567  //g' RTA_examen/PuntoD.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ mkdir -p Ejercicio_D/{libros,musica,peliculas}/autores{1..5} 
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #Listo..
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ #fin del punto D
+]0;vagrant@VMPruebas: ~[01;32mvagrant@VMPruebas[00m:[01;34m~[00m$ logout
+Connection to 192.168.56.2 closed.
+]777;notify;Command completed;ssh vagrant@192.168.56.2\]777;precmd\]0;gferrer@pc-fusion:~/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\]7;file://pc-fusion/home/gferrer/repogit/SO_Examen/UTN-FRA-Arq-SO/Examenes/RTA/1erParcial\[?2004h[gferrer@pc-fusion 1erParcial]$ [?2004l
+exit
+
+Script terminado en 2023-05-20 03:33:49-03:00 [CÓDIGO_SALIDA_ORDEN="0"]
