@@ -34,5 +34,5 @@ reset; ansible-playbook -i inventory/hosts playbook.yml
 
 ### Cuando pida Nro de prueba introducir:
 ```sh
-20231204
+20231211
 ```
