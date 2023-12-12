@@ -1,9 +1,4 @@
 # UTN-FRA_SO_Examenes
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-</style>
 
 ### Modo de Uso:
 - Desde el Usuario que se realizara el parcial
@@ -18,8 +13,8 @@ g { color: Green }
   - [ ] Enunciado               -> pdf con el enunciado del parcial
   - [ ] checks                  -> Script de chequeos / correccion 
   - [ ] ~~Carpetas varias~~     -> Diversas carpetas con informacion para resolver algun punto del examen
-
-- <span style="color:green"> Posteriormente al examen y si amerita, se agregaran las siguientes carpetas </span>
+<div>
+- <span style="color:green"> Posteriormente al examen y si amerita, se agregaran las siguientes carpetas </span> </div>
 
   - [ ] vm              -> Carpeta con vagrantfile de la vm del parcial
   - [ ] resolucion      -> Resolucion del examen
