@@ -19,7 +19,7 @@ g { color: Green }
   - [ ] checks                  -> Script de chequeos / correccion 
   - [ ] ~~Carpetas varias~~     -> Diversas carpetas con informacion para resolver algun punto del examen
 
-- <div><g>Posteriormente al examen y si amerita, se agregaran las siguientes carpetas </g> </div>
+- <span style="color:green"> Posteriormente al examen y si amerita, se agregaran las siguientes carpetas </span>
 
   - [ ] vm              -> Carpeta con vagrantfile de la vm del parcial
   - [ ] resolucion      -> Resolucion del examen
