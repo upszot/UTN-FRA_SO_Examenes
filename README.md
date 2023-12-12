@@ -13,11 +13,7 @@
   - [ ] Enunciado               -> pdf con el enunciado del parcial
   - [ ] checks                  -> Script de chequeos / correccion 
   - [ ] ~~Carpetas varias~~     -> Diversas carpetas con informacion para resolver algun punto del examen
-<div>
-- <span style="color:green"> Posteriormente al examen y si amerita, se agregaran las siguientes carpetas </span> </div>
-<body>
-  <p style="color:rgba(255,0,0,0.5);">Red paragraph text</p>
-</body>
+- Posteriormente al examen y si amerita, se agregaran las siguientes carpetas
 
   - [ ] vm              -> Carpeta con vagrantfile de la vm del parcial
   - [ ] resolucion      -> Resolucion del examen
