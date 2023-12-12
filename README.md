@@ -1,43 +1,54 @@
 # UTN-FRA_SO_Examenes
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
 
-## Contenido 
-- Carpeta: 202310
-    - pdf del examen
-    - script re resolucion
-    - vm -> vagrantfile con los discos y ya clonacion del repo
-
-## Uso:
-
+### Modo de Uso:
+- Desde el Usuario que se realizara el parcial
+- Parado en el $HOME del mismo
 - Clonar el repo:
-```sh
-git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+```sh 
+    git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
 ``` 
 
-- Levantar la vm de vagrant
-```sh
-# Desde una terminal de PowerShell parado en:  UTN-FRA_SO_Examenes/202310/vm/    Ejecutar:
-vagrant up
-vagrant ssh
-``` 
+### Los Examenes contaran con la siguiente estructura de directorio por defecto
+- [ ] **yyyymm~~dd~~**          -> Carpeta del examen con fecha 
+  - [ ] Enunciado               -> pdf con el enunciado del parcial
+  - [ ] checks                  -> Script de chequeos / correccion 
+  - [ ] ~~Carpetas varias~~     -> Diversas carpetas con informacion para resolver algun punto del examen
 
-- Antes que nada validar nombres de los discos de 5G y 8G
-```sh
-sudo fdisk -l |less
-```
+- <div><g>Posteriormente al examen y si amerita, se agregaran las siguientes carpetas </g> </div>
 
-- Para realizar el examen, estando parado en el home de vagrant ejecuto:
-```sh
-./UTN-FRA_SO_Examenes/202310/resolucion/punto1.sh
-./UTN-FRA_SO_Examenes/202310/resolucion/punto2.sh
-./UTN-FRA_SO_Examenes/202310/resolucion/punto3.sh
-./UTN-FRA_SO_Examenes/202310/resolucion/punto4.sh
-./UTN-FRA_SO_Examenes/202310/resolucion/punto5.sh
+  - [ ] vm              -> Carpeta con vagrantfile de la vm del parcial
+  - [ ] resolucion      -> Resolucion del examen
 
 
-```
+### Historial de Examenes
 
-## Notas:
-- Para cortar la ejecucion de los script [Ctrl+c]
-- Tener en cuenta que si corto la ejecucion van a tener que editar los script para que continue desde donde lo cortaron.. para ello pueden hacer una copia del script, editarla y ejecutar la misma.
-o hacer un vagrant destroy -f  y levantar el entorno de nuevo...
+| 1er Parcial  |
+| --  |
+
+- [x] **20230521**
+    - [x] Enunciado
+    - [x] resolucion.md     -> Comandos punto por punto
+    - [x] vm                -> Vagrantfile utilizada para el parcial
+    - [x] README.md         -> Ver la Reproduccion del parcial
+    - [x] rec               -> Archivos de Grabacion y timestamp de la consola, usados para la reproduccion del parcial
+
+- [x] **202310**
+    - [X] Enunciado
+    - [x] vm                -> Vagrantfile utilizada para el parcial
+    - [ ] resolucion        -> Resolucion scripteada
+    - [ ] checkeos          -> Script de chequeo / correccion
+
+| 2do Parcial  |
+| --  |
+
+- [x] **202311 // 202311_Recu // 20231204 // 20231211**
+    - [ ] checks      -> Script de chequeo / correccion
+    - [ ] bash_script -> Archivos complementarios 
+    - [ ] docker      -> Archivos complementarios 
+    - [ ] ansible     -> Archivos complementarios 
 
