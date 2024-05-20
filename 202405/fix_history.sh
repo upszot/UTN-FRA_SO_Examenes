@@ -1,6 +1,9 @@
 # Habilita la opción para agregar nuevos comandos al final del historial de comandos.
 shopt -s histappend
+
 history -a
+touch ~/.bash_history
+chmod 600 ~/.bash_history
 chattr +a ~/.bash_history
 
 # Agrega configuración al final del archivo .bashrc
