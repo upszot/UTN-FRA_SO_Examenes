@@ -18,6 +18,6 @@ export HISTFILESIZE=-1
 export PROMPT_COMMAND="history -a; history -c; history -r; \$PROMPT_COMMAND"
 EOF
 # Recarga el archivo .bashrc para aplicar los cambios.
-source ~/.bashrc
+. ~/.bashrc
 
-bash history -a
+history -a
