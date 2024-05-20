@@ -1,3 +1,14 @@
+#!/bin/bash
+TIMESTAMP=$(date +%Y%m%d)
+
+mkdir $HOME/RTA_Examen_${TIMESTAMP}
+touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_A.sh
+touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_B.sh
+touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_C.sh
+touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_D.sh
+touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_E.sh
+touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_F.sh
+
 # Habilita la opción para agregar nuevos comandos al final del historial de comandos.
 shopt -s histappend
 
@@ -21,11 +32,3 @@ EOF
 . ~/.bashrc
 
 history -a
-
-mkdir $HOME/RTA_Examen_$(date +”%Y%m%d”)
-touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_A.sh
-touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_B.sh
-touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_C.sh
-touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_D.sh
-touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_E.sh
-touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_F.sh
