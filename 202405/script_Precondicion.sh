@@ -21,3 +21,11 @@ EOF
 . ~/.bashrc
 
 history -a
+
+mkdir $HOME/RTA_Examen_$(date +”%Y%m%d”)
+touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_A.sh
+touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_B.sh
+touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_C.sh
+touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_D.sh
+touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_E.sh
+touch $HOME/RTA_Examen_$(date +”%Y%m%d”)/Punto_F.sh
