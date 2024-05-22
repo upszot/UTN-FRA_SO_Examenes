@@ -1,4 +1,5 @@
 #!/bin/bash
+TIMESTAMP=$(date +%Y%m%d)
 
 clear
 echo "Validar Usuario y grupos"
@@ -21,5 +22,8 @@ sudo ls -l /datos
 
 
 echo
-echo "Ejecutar cat del archivo donde se guardo los comandos para el punto en cuestion"
-ls -l  $HOME/RTA_Examen_$(date +”%Y%m%d”)/
+echo "cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_C_D.sh"
+echo
+
+cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_C_D.sh
+

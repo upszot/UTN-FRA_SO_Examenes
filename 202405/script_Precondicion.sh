@@ -4,8 +4,8 @@ TIMESTAMP=$(date +%Y%m%d)
 mkdir $HOME/RTA_Examen_${TIMESTAMP}
 touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_A.sh
 touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_B.sh
-touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_C.sh
-touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_D.sh
+touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_C_D.sh
+#touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_D.sh
 touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_E.sh
 touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_F.sh
 
@@ -32,3 +32,7 @@ EOF
 . ~/.bashrc
 
 history -a
+echo 
+echo "Por favor ejecute: source  ~/.bashrc  && history -a "
+echo 
+
