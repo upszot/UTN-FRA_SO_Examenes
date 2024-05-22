@@ -5,7 +5,7 @@ history |grep mkdir |grep -i Ejercicio_E
 
 echo
 echo
-tree $HOME/Ejercicio_E --noreport  | pr -T -s' ' -w 80 --column 4
+tree $HOME/Ejercicio_E --noreport | pr -T -s' ' -w 80 --column 4
 
 echo
 read -p "Presione una tecla para continuar: " Pausa
