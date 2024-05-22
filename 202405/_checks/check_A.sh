@@ -1,9 +1,12 @@
 #!/bin/bash
+TIMESTAMP=$(date +%Y%m%d)
 history |grep mkdir |grep -i datos
 
 echo
 tree /datos/
 
 echo
-echo "Ejecutar cat del archivo donde se guardo los comandos para el punto en cuestion"
-ls -l  $HOME/RTA_Examen_$(date +”%Y%m%d”)/
+echo "cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_A.sh"
+echo
+
+cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_A.sh
