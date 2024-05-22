@@ -1,8 +1,9 @@
 #!/bin/bash
 TIMESTAMP=$(date +%Y%m%d)
+echo "history: "
 history |grep mkdir |grep -i datos
 
-echo
+echo "tree: "
 sudo tree /datos/
 
 echo
