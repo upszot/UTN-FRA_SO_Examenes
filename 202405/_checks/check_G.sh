@@ -1,7 +1,7 @@
 #!/bin/bash
 TIMESTAMP=$(date +%Y%m%d)
 
-history |grep -i basicavanzado
+grep -i avanzado ~/.bash_history
 
 cat $HOME/Punto_G/Filtro_Avanzado.txt
 

@@ -10,11 +10,11 @@ echo
 
 lsblk -f
 echo
+echo "df -h"
 df -h
-
-
+echo "fdisk -l "
+sudo fdisk -l $(sudo fdisk -l  |grep "6 GiB" | awk '{print $2}' |sed 's/://g')
 echo
 echo "cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_B.sh"
 echo
-
 cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_B.sh

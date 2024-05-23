@@ -1,7 +1,7 @@
 #!/bin/bash
 TIMESTAMP=$(date +%Y%m%d)
 
-history |grep mkdir |grep -i Ejercicio_E
+grep mkdir ~/.bash_history |grep -i Ejercicio_E
 
 echo
 echo

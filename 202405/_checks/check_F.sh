@@ -1,7 +1,7 @@
 #!/bin/bash
 TIMESTAMP=$(date +%Y%m%d)
 
-history |grep -i basico
+grep -i basico ~/.bash_history
 
 
 
