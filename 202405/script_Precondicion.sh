@@ -8,6 +8,7 @@ touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_C_D.sh
 #touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_D.sh
 touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_E.sh
 touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_F.sh
+touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_G.sh
 
 # Habilita la opción para agregar nuevos comandos al final del historial de comandos.
 shopt -s histappend
