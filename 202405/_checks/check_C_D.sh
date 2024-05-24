@@ -2,24 +2,28 @@
 TIMESTAMP=$(date +%Y%m%d)
 
 clear
-echo "Validar Usuario y grupos"
 echo
+echo "Validar /etc/passwd: "
 sudo grep p1c1  /etc/passwd  
 echo
-sudo grep -i "p1c1"  /etc/group
+echo "Valido /etc/group: p1c1_2024_Todos e id  p1c1_2024_u2"
+sudo grep -i "p1c1_2024_Todos"  /etc/group
+id p1c1_2024_u2
 echo
 echo "home de los usuarios: "
-ls -l /home
-
+ls -l /home |grep p1c1
 echo
 echo "Misma Clave"
 sudo grep p1c1  /etc/shadow 
 echo
-echo "alta usuario"
+echo
+read -p "Presione una tecla para continuar: " Pausa
+echo
+echo "Alta usuario: "
 grep useradd  ~/.bash_history |grep -i p1c1_2024_u2
 echo
 
-echo "Validar de Permisos"
+echo "Validar de Permisos /datos  "
 sudo ls -l /datos
 
 
