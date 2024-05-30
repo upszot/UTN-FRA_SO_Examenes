@@ -1,5 +1,7 @@
 #!/bin/bash
 TIMESTAMP=$(date +%Y%m%d)
+
+clear
 echo "history: "
 grep mkdir ~/.bash_history |grep -i datos
 
@@ -11,3 +13,4 @@ echo "cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_A.sh"
 echo
 cat $HOME/RTA_Examen_${TIMESTAMP}/Punto_A.sh
 echo "-------------------------------------------------------------"
+echo

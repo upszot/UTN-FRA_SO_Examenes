@@ -37,6 +37,12 @@
     - [ ] resolucion        -> Resolucion scripteada
     - [ ] checkeos          -> Script de chequeo / correccion
 
+- [x] **202405**
+    - [X] Enunciado
+    - [ ] vm                -> Vagrantfile utilizada para el parcial
+    - [X] resolucion        -> Resolucion scripteada
+    - [X] checkeos          -> Script de chequeo / correccion
+
 | 2do Parcial  |
 | --  |
 
