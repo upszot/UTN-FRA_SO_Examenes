@@ -6,5 +6,5 @@
 
 - [ ] **Post Parcial:**
   - `_checks`: Scripts que muestran informacion sin muchos filtros, para permitir una correccion mas rapida.
-  - `Resolucion`: Bash-Script basicos (Punto por Punto), utilizando solo los comandos dados en clase hasta este punto, para resolver el parcial.
-  - 
+  - `Resolucion`: Bash-Script basicos (Punto por Punto), utilizando solo los comandos dados en clase hasta el momento, para resolver el parcial.
+
