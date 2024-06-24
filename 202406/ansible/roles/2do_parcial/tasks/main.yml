@@ -1,0 +1,6 @@
+---
+# tasks file for 2do_parcial
+
+- debug:
+    msg: "Tareas del 2do Parcial"
+

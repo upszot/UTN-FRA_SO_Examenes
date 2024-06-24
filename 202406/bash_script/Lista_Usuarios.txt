@@ -1,0 +1,11 @@
+#--------------------#
+#
+# Listado de Usuarios separando campos por coma.
+#
+# Nombre_Usuario , Grupo_Primario , Directorio_Home
+#
+#--------------------#
+2P_202406_Prog1,2P_GDesa,/work/2P_202406_Prog1
+2P_202406_Prog2,2P_GDesa,/work/2P_202406_Prog2
+2P_202406_Test1,2P_GTest,/work/2P_202406_Test1
+2P_202406_Supervisor,2PSupervisores,/work/2P_202406_Supervisor

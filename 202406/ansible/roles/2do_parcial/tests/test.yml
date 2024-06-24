@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  roles:
+    - 2do_parcial
