@@ -15,6 +15,8 @@ echo
 echo "lsblk -f"
 lsblk -f
 echo
+read -p "Presione una tecla para continuar" PAUSA
+echo
 
 # --- LVM
 echo "pvs - vgs - lvs "
