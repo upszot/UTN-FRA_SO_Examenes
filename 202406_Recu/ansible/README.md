@@ -6,8 +6,9 @@
 		- Sudoers_~~**tu-apellido**~~
 		- Instala-tools_~~**tu-apellido**~~
 		
-	- Se dejea una estructura **funcional** con la llamada a 1 rol
-	> El alumno debera modificar el task del rol entregado y generar los nuevos roles pedidos. </br>
+	- Se dejea una estructura __funcional__ con la llamada a 1 rol
+	
+	> El alumno debera modificar el rol entregado y generar los nuevos roles pedidos. </br>
 	> El playbook debera de llamar a todos los roles pedidos.</br>
 	> El Alumno debera realizar los ajustes en su entorno para que el playbook pueda correr</br>
 	> Conectandose con ssh-key a 127.0.0.1 simulando la ejecucion contra una vm productiva.</br>
@@ -17,6 +18,7 @@
 ```sh
 reset; ansible-playbook -i inventory/hosts playbook.yml
 ```
+
 ### Contenido:
 	- playbook.yml  -> receta 
 	- ansible.cfg -> configuracion local de ansible
