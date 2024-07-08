@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Operativos - UTNFRA</title>
+</head>
+<body>
+    <div>
+        <h1>Recuperatorio 2do Parcial</h1>
+        <h2>Detalles del Alumno</h2>
+        <ul>
+            <li>Tu-Nombre Tu-Apellido</li>
+            <li>División: Tu-Division</li>
+            <li id="examen">Examen: 2do Parcial - Recuperatorio <span id="fecha"></span></li>
+            <li>IP Pública: <span id="ip-publica"></span></li>
+        </ul>
+    </div>        
+
+    <div id="contenido-archivo">
+        <h2>Archivo:</h2>
+        <textarea id="contenido-archivo-texto" rows="10" cols="50" readonly></textarea>
+    </div>
+
+    <script src="scripts/get-current-date.js"></script>
+    <script src="scripts/get-ip-publica.js"></script>
+    <script src="scripts/get-file-content.js"></script>
+</body>
+</html>

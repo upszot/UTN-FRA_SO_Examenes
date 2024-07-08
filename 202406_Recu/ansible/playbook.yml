@@ -1,0 +1,11 @@
+---
+- hosts: all
+
+  tasks:
+    - include_role:
+        name: 2PRecuperatorio
+    
+    - name: "Otra tarea"
+      debug:
+        msg: "Despues de la ejecucion del rol"
+
