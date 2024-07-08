@@ -35,8 +35,12 @@ reset; ansible-playbook -i inventory/hosts playbook.yml
 			- ~~template_01.j2~~  -> Template de jinja2 a editar
 	
 
-### Comportamiento:
-- El playbook llama al rol: 
-	- 2PRecuperatorio 
-> Se ejecuta contra el listado de host definido tomando los valores de las variables de los distintos archivos </br>
+### Comportamiento deseado:
+- El playbook llama a los roles: 
+	- 2PRecuperatorio
+	- Alta_Usuarios_~~**tu-apellido**~~
+	- Sudoers_~~**tu-apellido**~~
+	- Instala-tools_~~**tu-apellido**~~
+> Se ejecuta contra el listado de host definido </br>
+> Tomando los valores de las variables de los distintos archivos </br>
  
