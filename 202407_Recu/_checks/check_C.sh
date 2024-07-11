@@ -7,7 +7,7 @@ clear
 echo "Docker"
 docker ps
 echo 
-curl localhost:8080
+curl localhost:8081
 echo 
 
 # --- Comandos usados:
