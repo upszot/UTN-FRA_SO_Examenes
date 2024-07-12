@@ -5,8 +5,11 @@ PUNTO="D"
 # ---
 clear
 echo "Ansible: "
-cat ansible/roles/2do_parcial/task/main.yml
+cat ansible/roles/2PRecuperatorio/task/main.yml
 echo 
+
+echo
+ls -l ansible/roles/
 
 # --- Comandos usados:
 echo
