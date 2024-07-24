@@ -1,0 +1,8 @@
+---
+# tasks file for 2PRecuperatorio
+
+ - name: "Rol: 2PRecuperatorio"
+   debug:
+     msg: "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+
+
