@@ -26,22 +26,30 @@ shopt -s histappend
 
 touch ~/.bash_history
 chmod 600 ~/.bash_history
-sudo chattr +a ~/.bash_history
 
-# Agrega configuración al final del archivo .bashrc
-cat << EOF >> ~/.bashrc
 
-###########################################################
-# Configuración del historial de comandos #
-###########################################################
-# Establece el tamaño máximo del historial en 10000 comandos.
-export HISTSIZE=10000
-# No hay límite en el tamaño del archivo de historial.
-export HISTFILESIZE=-1
-# Actualiza y sincroniza el historial de comandos entre sesiones.
-export PROMPT_COMMAND="history -a; history -c; history -r; \$PROMPT_COMMAND"
+if [[ "$(lsattr "$HOME/.bash_history" | awk '{print $1}')" != *a* ]]; then
+  sudo chattr +a ~/.bash_history
+fi
+
+if [ grep -c "Configuración del historial de comandos" != 0]; then
+    # Agrega configuración al final del archivo .bashrc
+    cat << EOF >> ~/.bashrc
+
+    ###########################################################
+    #     Configuración del historial de comandos 
+    #---------------------------------------------------------#
+    # Establece el tamaño máximo del historial en 10000 comandos.
+    export HISTSIZE=10000
+    # No hay límite en el tamaño del archivo de historial.
+    export HISTFILESIZE=-1
+    # Actualiza y sincroniza el historial de comandos entre sesiones.
+    export PROMPT_COMMAND="history -a; history -c; history -r; \$PROMPT_COMMAND"
+    ###########################################################
 
 EOF
+fi
+
 # Recarga el archivo .bashrc para aplicar los cambios.
 . ~/.bashrc
 
