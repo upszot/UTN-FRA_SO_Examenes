@@ -1,9 +1,9 @@
 #!/bin/bash
 TIMESTAMP=$(date +%Y%m%d)
 
-mkdir $HOME/repogit/UTNFRA_SO_1P2C2024_*/RTA_Examen_${TIMESTAMP}
 REPO_ALUMNO=$(find $HOME -name UTNFRA_SO_1P2C_2024*)
 
+mkdir ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}
 touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_A.sh
 touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_B.sh
 touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_C.sh
