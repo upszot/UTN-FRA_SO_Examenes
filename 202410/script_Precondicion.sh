@@ -1,14 +1,16 @@
 #!/bin/bash
 TIMESTAMP=$(date +%Y%m%d)
 
-mkdir $HOME/RTA_Examen_${TIMESTAMP}
-touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_A.sh
-touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_B.sh
-touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_C.sh
-touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_D.sh
-touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_E.sh
-touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_F.sh
-touch $HOME/RTA_Examen_${TIMESTAMP}/Punto_G.sh
+mkdir $HOME/repogit/UTNFRA_SO_1P2C2024_*/RTA_Examen_${TIMESTAMP}
+REPO_ALUMNO=$(find $HOME -name UTNFRA_SO_1P2C_2024*)
+
+touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_A.sh
+touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_B.sh
+touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_C.sh
+touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_D.sh
+touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_E.sh
+touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_F.sh
+touch ${REPO_ALUMNO}/RTA_Examen_${TIMESTAMP}/Punto_G.sh
 
 
 # Habilita la opción para agregar nuevos comandos al final del historial de comandos.
