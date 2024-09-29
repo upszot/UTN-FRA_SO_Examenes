@@ -12,7 +12,7 @@ if [ -z $PATH_REPO_ALUMNO ]; then
 fi
 
 mkdir -p ${PATH_REPO_ALUMNO}/{RTA_SCRIPT_Examen_${TIMESTAMP},RTA_ARCHIVOS_Examen_${TIMESTAMP}}
-touch ${PATH_REPO_ALUMNO}/RTA_SCRIPT_Examen_${TIMESTAMP}/Punto_{A..G}.sh
+touch ${PATH_REPO_ALUMNO}/RTA_SCRIPT_Examen_${TIMESTAMP}/Punto_{A..F}.sh
 
 # Habilita la opción para agregar nuevos comandos al final del historial de comandos.
 shopt -s histappend
