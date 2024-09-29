@@ -2,7 +2,7 @@
 TIMESTAMP=$(date +%Y%m%d)
 REPO_ALUMNO="UTNFRA_SO_1P2C_2024*"
 
-PATH_REPO_ALUMNO=$(find $HOME -name $REPO_ALUMNO)
+PATH_REPO_ALUMNO=$(find $HOME -iname $REPO_ALUMNO)
 
 if [ -z $PATH_REPO_ALUMNO ]; then
 
@@ -13,7 +13,6 @@ fi
 
 mkdir -p ${PATH_REPO_ALUMNO}/{RTA_SCRIPT_Examen_${TIMESTAMP},RTA_ARCHIVOS_Examen_${TIMESTAMP}}
 touch ${PATH_REPO_ALUMNO}/RTA_SCRIPT_Examen_${TIMESTAMP}/Punto_{A..G}.sh
-
 
 # Habilita la opción para agregar nuevos comandos al final del historial de comandos.
 shopt -s histappend
