@@ -16,7 +16,7 @@
 Ej:
 ```sh 
     cd repogit
-    git clone git@github.com:upszot/UTNFRA_SO_1P2C_2024_ferrer.git
+    git clone git@github.com:`Tu-repositorio`.git
 ``` 
 <div>
 <table>
