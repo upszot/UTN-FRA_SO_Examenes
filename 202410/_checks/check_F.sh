@@ -16,9 +16,10 @@ if [ -z $PATH_REPO_ALUMNO ]; then
 fi
 
 echo
-PATH_SCRIPT=$(find $PATH_REPO_ALUMNO -iname $SCRIPT )
 echo "Punto F - Validacion Manual"
-echo "------ Script $SCRIPT --------"
+echo
+PATH_SCRIPT=$(find $PATH_REPO_ALUMNO -iname $SCRIPT )
+echo "------ script Alumno: $SCRIPT --------"
 cat $PATH_SCRIPT
 echo "------------------------------"
 echo
@@ -26,8 +27,9 @@ echo
 
 PATH_ARCHIVO_RTA=$(find $PATH_REPO_ALUMNO -iname $ARCHIVO_RTA )
 echo
-echo "Cat $PATH_ARCHIVO_RTA"
+echo "--- cat $PATH_ARCHIVO_RTA"
 echo
 cat $PATH_ARCHIVO_RTA
+echo "------------------------------"
 echo 
 
