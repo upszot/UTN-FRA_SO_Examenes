@@ -25,3 +25,5 @@ else
     diff "$PATH_TEMP/Punto_C_Mapeo_Alumno.txt" "${MAPEO_FILE}.txt"
     exit 1
 fi
+
+rm -rf ${MAPEO_FILE}.txt ${MAPEO_FILE_PRINCIPAL}.txt
