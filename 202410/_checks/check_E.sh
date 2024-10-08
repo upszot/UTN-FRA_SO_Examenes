@@ -15,11 +15,12 @@ if [ -z $PATH_REPO_ALUMNO ]; then
     exit 1
 fi
 
+echo
 PATH_SCRIPT=$(find $PATH_REPO_ALUMNO -iname $SCRIPT )
 echo "Punto E - Validacion Manual"
 echo "------ Script $SCRIPT --------"
 cat $PATH_SCRIPT
-echo
+echo "------------------------------"
 echo
 
 
