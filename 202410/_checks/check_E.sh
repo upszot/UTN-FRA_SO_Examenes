@@ -2,7 +2,7 @@
 
 REPO_ALUMNO="UTNFRA_SO_1P2C_2024*"
 ARCHIVO_RTA="Filtro_Basico.txt"
-
+SCRIPT="Punto_E.sh"
 
 
 PATH_REPO_ALUMNO=$(find $HOME -iname $REPO_ALUMNO)
@@ -15,13 +15,18 @@ if [ -z $PATH_REPO_ALUMNO ]; then
     exit 1
 fi
 
+PATH_SCRIPT=$(find $PATH_REPO_ALUMNO -iname $SCRIPT )
+echo "Punto E - Validacion Manual"
+echo "------ Script $SCRIPT --------"
+cat $PATH_SCRIPT
+echo
+echo
+
+
 PATH_ARCHIVO_RTA=$(find $PATH_REPO_ALUMNO -iname $ARCHIVO_RTA )
 echo
 echo "Cat $PATH_ARCHIVO_RTA"
 echo
-
 cat $PATH_ARCHIVO_RTA
-
-
-
+echo
 
