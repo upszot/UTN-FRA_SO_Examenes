@@ -30,7 +30,7 @@ Ej:
 ```sh 
     cd $HOME/repogit
     ./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
-    ~/.bashrc  && history -a  
+    source ~/.bashrc  && history -a  
 ``` 
 
 El script de Precondiciones generara la estructura del necesaria para resolver el parcial dentro del repositorio del usuario.
