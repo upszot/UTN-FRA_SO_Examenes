@@ -7,8 +7,10 @@ PATH_REPO_BASE=$(find $HOME/repogit/ -iname UTNFRA_SO_1P2C_2024*)
 # Me aseguro de estar dentro del repositorio
 cd $PATH_REPO_BASE
 
-# Para que me quede mas corto.. creo variable con todo el path del archivo
-ARCHIVO_FILTRO_AVANZADO="$PATH_REPO_BASE/$(ls |grep -i archivos_examen)/Filtro_Avanzado.txt"
+# Para que me quede mas corto.. 
+# creo variable con todo el path del archivo
+# y Descubro el nombre de la carpeta donde tengo que dejar el archivo
+ARCHIVO_FILTRO_AVANZADO="$PATH_REPO_BASE/$(ls $PATH_REPO_BASE |grep -i archivos_examen)/Filtro_Avanzado.txt"
 
 echo "Se generara el archivo: $ARCHIVO_FILTRO_AVANZADO"
 echo
