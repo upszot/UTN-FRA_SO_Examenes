@@ -9,7 +9,9 @@ sudo sed -i 's/'"$SEARCH_PATTERN"'/'"$REPLACE_PATTERN"'/g' /etc/ssh/sshd_config
 
 # Buscar y reemplazar en todos los archivos dentro de /etc/ssh/sshd_config.d/
 for file in /etc/ssh/sshd_config.d/*.conf; do
-    sudo sed -i 's/'"$SEARCH_PATTERN"'/'"$REPLACE_PATTERN"'/g' "$file"
+    if [ -e "$file" ]; then
+        sudo sed -i 's/'"$SEARCH_PATTERN"'/'"$REPLACE_PATTERN"'/g' "$file"
+    fi
 done
 
 # Reiniciar el servicio SSH para aplicar los cambios
