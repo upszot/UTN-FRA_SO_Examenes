@@ -1,11 +1,14 @@
 #!/bin/bash
 
+#Descubro el path del repositorio..
+PATH_REPO_BASE=$(find $HOME/repogit/ -iname UTNFRA_SO_1P2C_2024*)
+
 # Para que funcione el comando de git
 # Me aseguro de estar dentro del repositorio
-cd $HOME/repogit/UTNFRA_SO_1P2C_2024_ferrer/
+cd $PATH_REPO_BASE
 
 # Para que me quede mas corto.. creo variable con todo el path del archivo
-ARCHIVO_FILTRO_AVANZADO="$HOME/repogit/UTNFRA_SO_1P2C_2024_ferrer/$(ls |grep -i archivos_examen)/Filtro_Avanzado.txt"
+ARCHIVO_FILTRO_AVANZADO="$PATH_REPO_BASE/$(ls |grep -i archivos_examen)/Filtro_Avanzado.txt"
 
 echo "Se generara el archivo: $ARCHIVO_FILTRO_AVANZADO"
 echo

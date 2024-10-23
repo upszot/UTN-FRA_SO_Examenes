@@ -25,7 +25,7 @@ Ej:
 - Ejecutar `Genera_Ejercicios_Defensa.sh` para generar un Enunciado random para la defensa
 ```sh 
     cd $HOME/repogit/UTN-FRA_SO_Examenes/202410/
-    ./1er2c_Parcial_2da_Parte(defensa)/Genera_Ejercicios_Defensa.sh
+    ./1er2c_Parcial_2da_Parte_defensa/Genera_Ejercicios_Defensa.sh
 ``` 
 
 El script de Genera_Ejercicios_Defensa generara la estructura del necesaria para resolver la 2da parte del parcial dentro del home del usuario.
