@@ -2,21 +2,20 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  #config.vagrant.plugins = "vagrant-disksize"
-  config.ssh.insert_key = false
-
+  # Agrega la key Privada de ssh en .vagrant/machines/default/virtualbox/private_key
+  config.ssh.insert_key = true
+  
   config.vm.box = "ubuntu/jammy64"
   
   config.vm.synced_folder '.', '/home/vagrant/compartido'
   config.vm.hostname = "1p2c-2024"
   config.vm.define :VM_1p2c_2024 do |t|
   end
-
   
-
   config.vm.network "private_network", :name => '', ip: "192.168.56.3"
-
+  
   # Agrego  Discos Segun pdf del parcial.
+  #config.vagrant.plugins = "vagrant-disksize"
   config.vm.disk :disk, size: "10GB", name: "extra_storage"
   config.vm.disk :disk, size: "2GB", name: "extra_storage2"
 
@@ -49,10 +48,32 @@ Vagrant.configure("2") do |config|
     git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
     git clone https://github.com/upszot/UTN-FRA_SO_Guia_Ejercicios.git
 
+    # Genero carpeta simulando repositorio del Alumno
+    mkdir -p $HOME/repogit/UTNFRA_SO_1P2C_2024_Resolucion
+    cp -R $HOME/repogit/UTN-FRA_SO_Examenes/.git  $HOME/repogit/UTNFRA_SO_1P2C_2024_Resolucion/
+    
+    # Inicio Estructura de directorio del examen
+    ./$HOME/repogit/UTN-FRA_SO_Examenes/202410/script_Precondicion.sh
+    source ~/.bashrc  && history -a 
+
   SHELL
 
+  # Mensaje post-up...
+  config.vm.post_up_message = <<-MENSAJE
+  
+  ###########################################################################
+  #
+  # Este equipo esta preparado para Mostrar la Resolucion del Examen:
+  #
+  ###########################################################################
+  # Si Usted desea realizar el mismo: 
+  # 1. Elimine la carpeta
+  
+  rm -rf $HOME/repogit/UTNFRA_SO_1P2C_2024_Resolucion/
+  
+  # 2. Siga las Indicaciones del README.md y pdf del examen
+  
+  MENSAJE
 
-  # Agrega la key Privada de ssh en .vagrant/machines/default/virtualbox/private_key
-  config.ssh.insert_key = true
 
 end
