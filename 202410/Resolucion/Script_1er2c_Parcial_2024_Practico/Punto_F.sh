@@ -28,3 +28,8 @@ Mi usuario es: $(whoami)
 El Hash de mi usuario es: $HASH
 La URL de mi repositorio es: $(git remote get-url origin)
 EOF
+
+echo
+echo "Muestro el contenido del archivo: "
+echo
+cat  $ARCHIVO_FILTRO_AVANZADO
