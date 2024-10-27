@@ -33,11 +33,15 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     # Los comandos aca se ejecutan como root
+    echo " Evita interacción del usuario durante la instalación de paquetes"
     export DEBIAN_FRONTEND=noninteractive
-
-    echo "Actualizo repositorio de paquetes e instalo tree"
+    
+    echo "  Actualiza la lista de paquetes disponibles desde los repositorios"
     apt-get update > /dev/null
+    
+    echo " Instalo: tree ansible ca-certificates curl"
     apt-get install -y tree > /dev/null
+
   SHELL
   
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
