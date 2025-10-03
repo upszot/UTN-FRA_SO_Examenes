@@ -1,35 +1,15 @@
-# 1_equipo_con_mas_discos
+# VM Para el Examen.
 
-> Vagrantfile con VM con discos extras..
-> Para lograr eso vamos a utilizar un plugin de vagrant
-> Tambien requerimos habilitar las features experimentales de vagrant. 
-
-## Agregado de discos a una vm
-
-- Instalar plugin vagrant-disksize
-```sh
-vagrant plugin install vagrant-disksize
-```
-
-- Habilitar las feature experimental (agregar variable de entorno)
-```sh
-# Linux
-export VAGRANT_EXPERIMENTAL="1"
-
-# Windows (cmd)
-setx VAGRANT_EXPERIMENTAL 1
-
-# Windows (PowerShell)
-$env:VAGRANT_EXPERIMENTAL = 1
-```
-
-
-
-### Agregar en el archivo Vagrantfile la siguiente linea
-```sh
-config.vm.disk :disk, size: "5GB", name: "extra_storage"
-```
-
-### Bibliografia
-http://man.hubwiz.com/docset/Vagrant.docset/Contents/Resources/Documents/www.vagrantup.com/docs/disks/usage.html
-
+ - [ ] La VM cuenta con la configuracion de discos Realizada para el Pre-Examen y Defensa.
+ - [ ] A fin de facilitar la Correccion por favor realice la siguientes tareas:
+    - Modificar el valor de la variable VMPostFijo del archivo  `Vagrantfile` de tal forma que la vm a crear sea identificable facilmente.
+    ```sh
+    # Asignar 1ra Letra del Nombre y Apellido
+    VMPostFijo="NApellido"
+    ```
+    -  Ejemplo:  Juan Perez
+    ```sh
+    VMPostFijo="JPerez"
+    ```
+- [ ] Dentro de la VM: Debera crear en el Home de su usuario, la carpeta `repogit` 
+  - Clone los repositorios necesarios dentro de la misma.

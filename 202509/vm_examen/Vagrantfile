@@ -4,22 +4,25 @@
 #https://developer.hashicorp.com/vagrant/docs/providers/virtualbox/configuration
 Vagrant.configure("2") do |config|
 
+  #Asignar 1ra Letra del Nombre y Apellido
+  VMPostFijo="NApellido"
+
   # VagrantBox que se usara para levantar.
   config.vm.box = "ubuntu/jammy64"
   
   #Nombre de la pc dentro del Sistema Operativo
-  config.vm.hostname = "VM_Examen_202509"
+  config.vm.hostname = "Examen202509-#{VMPostFijo}"
   
   # Comparto la carpeta del host donde estoy parado contra la vm
   config.vm.synced_folder 'compartido', '/home/vagrant/carpeta_compartida'
   
   # Configuración de Red
-  config.vm.network "private_network", :name => '', ip: "192.168.56.3"
+  config.vm.network "private_network", :name => '', ip: "192.168.56.100"
   
 
   # Agrego disco rigidos Extras (Nombres distintos)
-  config.vm.disk :disk, size: "8GB", name: "#{vmHost1.vm.hostname}_extra_storage"
-  config.vm.disk :disk, size: "2GB", name: "#{vmHost1.vm.hostname}_extra_storage"
+  config.vm.disk :disk, size: "8GB", name: "#{config.vm.hostname}_extra_storage_01"
+  config.vm.disk :disk, size: "2GB", name: "#{config.vm.hostname}_extra_storage_02"
 
   #Configuraciones de la VM en VirtualBox
   config.vm.provider "virtualbox" do |vb|
@@ -29,7 +32,7 @@ Vagrant.configure("2") do |config|
       vb.cpus = 2
 
       #Nombre de la VM en VirtualBox 
-      vb.name = "VM_Examen_202509"
+      vb.name = "Examen202509-#{VMPostFijo}"
 
       # Habilitar clones enlazados en VirtualBox
       vb.linked_clone = true
